@@ -5,5 +5,6 @@ There is a lot of interest at the moment in Software Bill of Materials data. But
 * [Applying policy to SBOM data](sbom-policy)
 * [Validation and conversion to alternative formats](sbom-conversion)
 * [Storage and query using a local database](sbom-storage)
+* [Combine multiple project SBOMs into a single SBOM](sbom-combination)
 
 If you have other ideas for demos please let me know.
