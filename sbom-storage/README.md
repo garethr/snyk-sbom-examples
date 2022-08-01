@@ -51,3 +51,18 @@ $ sqlite-utils sbom.db "select json_extract(metadata, '\$.component.name') as pr
 ```
 
 This is obviously intended as a low level example. You could build a higher level DSL for common queries, you might want to consider making this a timeseries, and you'd definitely want to consider how best to keep the database up to date. But the above should demonstrate how easy it is to get started.
+
+
+## Datasette
+
+Prefer a visual rather than CLI interface? [Datasette](https://datasette.io/) provides a nice way of building a user interface for a SQLite database.
+
+As a very simple example of what's possible, this repo contains a basic metadata file for datasette that defines a query for searching for packages using a variable.
+
+![Search for packages in datasette](datasette.png)
+
+With datasette installed, running the following will bring up the UI on localhost:8001.
+
+```
+datasette sbom.db -m metadata.json
+```

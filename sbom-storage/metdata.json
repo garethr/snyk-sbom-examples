@@ -1,0 +1,12 @@
+{
+    "databases": {
+       "sbom": {
+           "queries": {
+               "packages_search": {
+                   "sql": "select json_extract(metadata, '$.component.name') as project, json_extract(json_each.value, '$.purl') as purl from sboms, json_each(sboms.components) where instr(json_each.value, :package_name)",
+                   "title": "Search packages"
+               }
+           }
+       }
+    }
+}
