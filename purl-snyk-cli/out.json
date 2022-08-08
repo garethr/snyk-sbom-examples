@@ -1,0 +1,3562 @@
+{
+  "name": "io.snyk.examples:snykier",
+  "version": "0.0.1-SNAPSHOT",
+  "dependencies": {
+    "org.springframework.boot:spring-boot-starter-actuator": {
+      "dependencies": {
+        "org.springframework.boot:spring-boot-starter": {
+          "dependencies": {
+            "org.springframework.boot:spring-boot": {
+              "dependencies": {},
+              "version": "2.3.0.M2",
+              "name": "org.springframework.boot:spring-boot",
+              "labels": {
+                "scope": "compile"
+              }
+            },
+            "org.springframework.boot:spring-boot-autoconfigure": {
+              "dependencies": {},
+              "version": "2.3.0.M2",
+              "name": "org.springframework.boot:spring-boot-autoconfigure",
+              "labels": {
+                "scope": "compile"
+              }
+            },
+            "org.springframework.boot:spring-boot-starter-logging": {
+              "dependencies": {
+                "ch.qos.logback:logback-classic": {
+                  "dependencies": {
+                    "ch.qos.logback:logback-core": {
+                      "dependencies": {},
+                      "version": "1.2.3",
+                      "name": "ch.qos.logback:logback-core",
+                      "labels": {
+                        "scope": "compile"
+                      }
+                    }
+                  },
+                  "version": "1.2.3",
+                  "name": "ch.qos.logback:logback-classic",
+                  "labels": {
+                    "scope": "compile"
+                  }
+                },
+                "org.apache.logging.log4j:log4j-to-slf4j": {
+                  "dependencies": {
+                    "org.apache.logging.log4j:log4j-api": {
+                      "dependencies": {},
+                      "version": "2.13.0",
+                      "name": "org.apache.logging.log4j:log4j-api",
+                      "labels": {
+                        "scope": "compile"
+                      }
+                    }
+                  },
+                  "version": "2.13.0",
+                  "name": "org.apache.logging.log4j:log4j-to-slf4j",
+                  "labels": {
+                    "scope": "compile"
+                  }
+                },
+                "org.slf4j:jul-to-slf4j": {
+                  "dependencies": {},
+                  "version": "1.7.30",
+                  "name": "org.slf4j:jul-to-slf4j",
+                  "labels": {
+                    "scope": "compile"
+                  }
+                }
+              },
+              "version": "2.3.0.M2",
+              "name": "org.springframework.boot:spring-boot-starter-logging",
+              "labels": {
+                "scope": "compile"
+              }
+            },
+            "jakarta.annotation:jakarta.annotation-api": {
+              "dependencies": {},
+              "version": "1.3.5",
+              "name": "jakarta.annotation:jakarta.annotation-api",
+              "labels": {
+                "scope": "compile"
+              }
+            },
+            "org.yaml:snakeyaml": {
+              "dependencies": {},
+              "version": "1.25",
+              "name": "org.yaml:snakeyaml",
+              "labels": {
+                "scope": "compile"
+              }
+            }
+          },
+          "version": "2.3.0.M2",
+          "name": "org.springframework.boot:spring-boot-starter",
+          "labels": {
+            "scope": "compile"
+          }
+        },
+        "org.springframework.boot:spring-boot-actuator-autoconfigure": {
+          "dependencies": {
+            "org.springframework.boot:spring-boot-actuator": {
+              "dependencies": {},
+              "version": "2.3.0.M2",
+              "name": "org.springframework.boot:spring-boot-actuator",
+              "labels": {
+                "scope": "compile"
+              }
+            },
+            "com.fasterxml.jackson.core:jackson-databind": {
+              "dependencies": {
+                "com.fasterxml.jackson.core:jackson-annotations": {
+                  "dependencies": {},
+                  "version": "2.10.1",
+                  "name": "com.fasterxml.jackson.core:jackson-annotations",
+                  "labels": {
+                    "scope": "compile"
+                  }
+                },
+                "com.fasterxml.jackson.core:jackson-core": {
+                  "dependencies": {},
+                  "version": "2.10.1",
+                  "name": "com.fasterxml.jackson.core:jackson-core",
+                  "labels": {
+                    "scope": "compile"
+                  }
+                }
+              },
+              "version": "2.10.1",
+              "name": "com.fasterxml.jackson.core:jackson-databind",
+              "labels": {
+                "scope": "compile"
+              }
+            },
+            "com.fasterxml.jackson.datatype:jackson-datatype-jsr310": {
+              "dependencies": {},
+              "version": "2.10.1",
+              "name": "com.fasterxml.jackson.datatype:jackson-datatype-jsr310",
+              "labels": {
+                "scope": "compile"
+              }
+            },
+            "org.springframework:spring-context": {
+              "dependencies": {},
+              "version": "5.2.3.RELEASE",
+              "name": "org.springframework:spring-context",
+              "labels": {
+                "scope": "compile"
+              }
+            }
+          },
+          "version": "2.3.0.M2",
+          "name": "org.springframework.boot:spring-boot-actuator-autoconfigure",
+          "labels": {
+            "scope": "compile"
+          }
+        },
+        "io.micrometer:micrometer-core": {
+          "dependencies": {
+            "org.hdrhistogram:HdrHistogram": {
+              "dependencies": {},
+              "version": "2.1.11",
+              "name": "org.hdrhistogram:HdrHistogram",
+              "labels": {
+                "scope": "compile"
+              }
+            },
+            "org.latencyutils:LatencyUtils": {
+              "dependencies": {},
+              "version": "2.0.3",
+              "name": "org.latencyutils:LatencyUtils",
+              "labels": {
+                "scope": "compile"
+              }
+            }
+          },
+          "version": "1.3.5",
+          "name": "io.micrometer:micrometer-core",
+          "labels": {
+            "scope": "compile"
+          }
+        }
+      },
+      "version": "2.3.0.M2",
+      "name": "org.springframework.boot:spring-boot-starter-actuator",
+      "labels": {
+        "scope": "compile"
+      }
+    },
+    "org.springframework.boot:spring-boot-starter-web": {
+      "dependencies": {
+        "org.springframework.boot:spring-boot-starter-json": {
+          "dependencies": {
+            "com.fasterxml.jackson.datatype:jackson-datatype-jdk8": {
+              "dependencies": {},
+              "version": "2.10.1",
+              "name": "com.fasterxml.jackson.datatype:jackson-datatype-jdk8",
+              "labels": {
+                "scope": "compile"
+              }
+            },
+            "com.fasterxml.jackson.module:jackson-module-parameter-names": {
+              "dependencies": {},
+              "version": "2.10.1",
+              "name": "com.fasterxml.jackson.module:jackson-module-parameter-names",
+              "labels": {
+                "scope": "compile"
+              }
+            }
+          },
+          "version": "2.3.0.M2",
+          "name": "org.springframework.boot:spring-boot-starter-json",
+          "labels": {
+            "scope": "compile"
+          }
+        },
+        "org.springframework.boot:spring-boot-starter-tomcat": {
+          "dependencies": {
+            "org.apache.tomcat.embed:tomcat-embed-core": {
+              "dependencies": {},
+              "version": "9.0.31",
+              "name": "org.apache.tomcat.embed:tomcat-embed-core",
+              "labels": {
+                "scope": "compile"
+              }
+            },
+            "org.glassfish:jakarta.el": {
+              "dependencies": {},
+              "version": "3.0.3",
+              "name": "org.glassfish:jakarta.el",
+              "labels": {
+                "scope": "compile"
+              }
+            },
+            "org.apache.tomcat.embed:tomcat-embed-websocket": {
+              "dependencies": {},
+              "version": "9.0.31",
+              "name": "org.apache.tomcat.embed:tomcat-embed-websocket",
+              "labels": {
+                "scope": "compile"
+              }
+            }
+          },
+          "version": "2.3.0.M2",
+          "name": "org.springframework.boot:spring-boot-starter-tomcat",
+          "labels": {
+            "scope": "compile"
+          }
+        },
+        "org.springframework:spring-web": {
+          "dependencies": {
+            "org.springframework:spring-beans": {
+              "dependencies": {},
+              "version": "5.2.3.RELEASE",
+              "name": "org.springframework:spring-beans",
+              "labels": {
+                "scope": "compile"
+              }
+            }
+          },
+          "version": "5.2.3.RELEASE",
+          "name": "org.springframework:spring-web",
+          "labels": {
+            "scope": "compile"
+          }
+        },
+        "org.springframework:spring-webmvc": {
+          "dependencies": {
+            "org.springframework:spring-aop": {
+              "dependencies": {},
+              "version": "5.2.3.RELEASE",
+              "name": "org.springframework:spring-aop",
+              "labels": {
+                "scope": "compile"
+              }
+            },
+            "org.springframework:spring-expression": {
+              "dependencies": {},
+              "version": "5.2.3.RELEASE",
+              "name": "org.springframework:spring-expression",
+              "labels": {
+                "scope": "compile"
+              }
+            }
+          },
+          "version": "5.2.3.RELEASE",
+          "name": "org.springframework:spring-webmvc",
+          "labels": {
+            "scope": "compile"
+          }
+        }
+      },
+      "version": "2.3.0.M2",
+      "name": "org.springframework.boot:spring-boot-starter-web",
+      "labels": {
+        "scope": "compile"
+      }
+    },
+    "net.lingala.zip4j:zip4j": {
+      "dependencies": {},
+      "version": "1.3.1",
+      "name": "net.lingala.zip4j:zip4j",
+      "labels": {
+        "scope": "compile"
+      }
+    }
+  },
+  "packageFormatVersion": "mvn:0.0.1"
+}
+{
+  "vulnerabilities": [
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+      "alternativeIds": [],
+      "creationTime": "2021-09-29T13:37:34.088850Z",
+      "credit": [
+        "Andrei Komarov"
+      ],
+      "cvssScore": 4.8,
+      "description": "## Overview\n[ch.qos.logback:logback-core](https://mvnrepository.com/artifact/ch.qos.logback/logback-core) is a logback-core module.\n\nAffected versions of this package are vulnerable to Insufficient Hostname Verification. `X.509` are not properly validated. By spoofing the TLS/SSL server via a certificate that appears valid, an attacker with the ability to intercept network traffic (e.g. MitM, DNS cache poisoning) can disclose and optionally manipulate transmitted data.\n## Remediation\nUpgrade `ch.qos.logback:logback-core` to version 1.2.7 or higher.\n## References\n- [GitHub Commit](https://github.com/qos-ch/logback/commit/626c7733c188f2ad60c1348a493761f60e2d7958)\n- [GitHub PR](https://github.com/qos-ch/logback/pull/305)\n- [Jira Issue](https://jira.qos.ch/browse/LOGBACK-1574)\n",
+      "disclosureTime": "2021-09-29T13:37:31Z",
+      "exploit": "Not Defined",
+      "functions": [],
+      "fixedIn": [
+        "1.2.7"
+      ],
+      "id": "SNYK-JAVA-CHQOSLOGBACK-1726923",
+      "identifiers": {
+        "CWE": [
+          "CWE-20"
+        ],
+        "CVE": []
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2021-11-19T16:36:31.923913Z",
+      "moduleName": "ch.qos.logback:logback-core",
+      "packageManager": "maven",
+      "packageName": "ch.qos.logback:logback-core",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2021-10-01T14:33:15Z",
+      "references": [
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/qos-ch/logback/commit/626c7733c188f2ad60c1348a493761f60e2d7958"
+        },
+        {
+          "title": "GitHub PR",
+          "url": "https://github.com/qos-ch/logback/pull/305"
+        },
+        {
+          "title": "Jira Issue",
+          "url": "https://jira.qos.ch/browse/LOGBACK-1574"
+        }
+      ],
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "title": "Insufficient Hostname Verification",
+      "insights": {
+        "triageAdvice": null
+      },
+      "cvssDetails": [],
+      "functions_new": [],
+      "semver": {
+        "vulnerable": [
+          "[,1.2.7)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "ch.qos.logback",
+        "artifactId": "logback-core"
+      },
+      "severityWithCritical": "medium",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "org.springframework.boot:spring-boot-starter-actuator@2.3.0.M2",
+        "org.springframework.boot:spring-boot-starter@2.3.0.M2",
+        "org.springframework.boot:spring-boot-starter-logging@2.3.0.M2",
+        "ch.qos.logback:logback-classic@1.2.3",
+        "ch.qos.logback:logback-core@1.2.3"
+      ],
+      "upgradePath": [
+        false,
+        "org.springframework.boot:spring-boot-starter-actuator@2.4.13",
+        "org.springframework.boot:spring-boot-starter@2.4.13",
+        "org.springframework.boot:spring-boot-starter-logging@2.4.13",
+        "ch.qos.logback:logback-classic@1.2.7",
+        "ch.qos.logback:logback-core@1.2.7"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "ch.qos.logback:logback-core",
+      "version": "1.2.3"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:L",
+      "alternativeIds": [],
+      "creationTime": "2020-12-04T11:58:40.054903Z",
+      "credit": [
+        "Bartosz Baranowski"
+      ],
+      "cvssScore": 8.2,
+      "description": "## Overview\n[com.fasterxml.jackson.core:jackson-databind](https://github.com/FasterXML/jackson-databind) is a library which contains the general-purpose data-binding functionality and tree-model for Jackson Data Processor.\n\nAffected versions of this package are vulnerable to XML External Entity (XXE) Injection. A flaw was found in FasterXML Jackson Databind, where it does not have entity expansion secured properly in the `DOMDeserializer` class. The highest threat from this vulnerability is data integrity.\n\n## Details\nXXE Injection is a type of attack against an application that parses XML input.\nXML is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. By default, many XML processors allow specification of an external entity, a URI that is dereferenced and evaluated during XML processing. When an XML document is being parsed, the parser can make a request and include the content at the specified URI inside of the XML document.\n\nAttacks can include disclosing local files, which may contain sensitive data such as passwords or private user data, using file: schemes or relative paths in the system identifier.\n\nFor example, below is a sample XML document, containing an XML element- username.\n\n```\n<xml>\n<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n   <username>John</username>\n</xml>\n```\n\nAn external XML entity - `xxe`, is defined using a system identifier and present within a DOCTYPE header. These entities can access local or remote content. For example the below code contains an external XML entity that would fetch the content of  `/etc/passwd` and display it to the user rendered by `username`.\n\n```\n<xml>\n<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n<!DOCTYPE foo [\n   <!ENTITY xxe SYSTEM \"file:///etc/passwd\" >]>\n   <username>&xxe;</username>\n</xml>\n```\n\nOther XXE Injection attacks can access local resources that may not stop returning data, possibly impacting application availability and leading to Denial of Service.\n\n## Remediation\nUpgrade `com.fasterxml.jackson.core:jackson-databind` to version 2.6.7.4, 2.9.10.7, 2.10.5.1 or higher.\n## References\n- [GitHub Commit](https://github.com/FasterXML/jackson-databind/commit/612f971b78c60202e9cd75a299050c8f2d724a59)\n- [GitHub Issue](https://github.com/FasterXML/jackson-databind/issues/2589)\n- [RedHat Bugzilla Bug](https://bugzilla.redhat.com/show_bug.cgi?id=1887664)\n",
+      "disclosureTime": "2020-12-04T11:54:03Z",
+      "exploit": "Not Defined",
+      "functions": [
+        {
+          "functionId": {
+            "filePath": "com/fasterxml/jackson/databind/ext/DOMSerializer.java",
+            "className": "DOMSerializer",
+            "functionName": "<init>"
+          },
+          "version": [
+            "[2.6.0,2.6.7.4)",
+            "[2.9.0,2.9.10.7)",
+            "[2.10.0, 2.10.5.1)"
+          ]
+        }
+      ],
+      "fixedIn": [
+        "2.6.7.4",
+        "2.9.10.7",
+        "2.10.5.1"
+      ],
+      "id": "SNYK-JAVA-COMFASTERXMLJACKSONCORE-1048302",
+      "identifiers": {
+        "CWE": [
+          "CWE-611"
+        ],
+        "GHSA": [
+          "GHSA-288c-cq4h-88gq"
+        ],
+        "CVE": [
+          "CVE-2020-25649"
+        ]
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2021-02-19T10:26:08.917970Z",
+      "moduleName": "com.fasterxml.jackson.core:jackson-databind",
+      "packageManager": "maven",
+      "packageName": "com.fasterxml.jackson.core:jackson-databind",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2020-12-04T15:22:52Z",
+      "references": [
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/FasterXML/jackson-databind/commit/612f971b78c60202e9cd75a299050c8f2d724a59"
+        },
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/FasterXML/jackson-databind/issues/2589"
+        },
+        {
+          "title": "RedHat Bugzilla Bug",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1887664"
+        }
+      ],
+      "severity": "high",
+      "socialTrendAlert": false,
+      "title": "XML External Entity (XXE) Injection",
+      "insights": {
+        "triageAdvice": null
+      },
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:L/A:N",
+          "cvssV3BaseScore": 5.8,
+          "severity": "medium",
+          "modificationTime": "2022-05-17T11:02:20.836339Z"
+        },
+        {
+          "assigner": "RHEL",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 7.5,
+          "severity": "high",
+          "modificationTime": "2022-06-16T10:11:42.454302Z"
+        },
+        {
+          "assigner": "NVD",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 7.5,
+          "severity": "high",
+          "modificationTime": "2022-07-26T01:11:31.804495Z"
+        }
+      ],
+      "functions_new": [
+        {
+          "functionId": {
+            "className": "com.fasterxml.jackson.databind.ext.DOMSerializer",
+            "functionName": "<init>"
+          },
+          "version": [
+            "[2.6.0,2.6.7.4)",
+            "[2.9.0,2.9.10.7)",
+            "[2.10.0, 2.10.5.1)"
+          ]
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "[2.6.0,2.6.7.4)",
+          "[2.9.0,2.9.10.7)",
+          "[2.10.0, 2.10.5.1)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "com.fasterxml.jackson.core",
+        "artifactId": "jackson-databind"
+      },
+      "severityWithCritical": "high",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "org.springframework.boot:spring-boot-starter-actuator@2.3.0.M2",
+        "org.springframework.boot:spring-boot-actuator-autoconfigure@2.3.0.M2",
+        "com.fasterxml.jackson.core:jackson-databind@2.10.1"
+      ],
+      "upgradePath": [
+        false,
+        "org.springframework.boot:spring-boot-starter-actuator@2.3.0.RELEASE",
+        "org.springframework.boot:spring-boot-actuator-autoconfigure@2.3.0.RELEASE",
+        "com.fasterxml.jackson.core:jackson-databind@2.11.0"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "com.fasterxml.jackson.core:jackson-databind",
+      "version": "2.10.1"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "alternativeIds": [],
+      "creationTime": "2021-12-26T12:13:09.437997Z",
+      "credit": [
+        "Unknown"
+      ],
+      "cvssScore": 5.9,
+      "description": "## Overview\n[com.fasterxml.jackson.core:jackson-databind](https://github.com/FasterXML/jackson-databind) is a library which contains the general-purpose data-binding functionality and tree-model for Jackson Data Processor.\n\nAffected versions of this package are vulnerable to Denial of Service (DoS) when using JDK serialization to serialize and deserialize `JsonNode` values.\r\nIt is possible for the attacker to send a 4-byte length payload, with a value of `Integer.MAX_VALUE` , that will eventually cause large buffer allocation and out of heap memory.\n\n## Details\n\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its intended and legitimate users.\n\nUnlike other vulnerabilities, DoS attacks usually do not aim at breaching security. Rather, they are focused on making websites and services unavailable to genuine users resulting in downtime.\n\nOne popular Denial of Service vulnerability is DDoS (a Distributed Denial of Service), an attack that attempts to clog network pipes to the system by generating a large volume of traffic from many machines.\n\nWhen it comes to open source libraries, DoS vulnerabilities allow attackers to trigger such a crash or crippling of the service by using a flaw either in the application code or from the use of open source libraries.\n\nTwo common types of DoS vulnerabilities:\n\n* High CPU/Memory Consumption- An attacker sending crafted requests that could cause the system to take a disproportionate amount of time to process. For example, [commons-fileupload:commons-fileupload](SNYK-JAVA-COMMONSFILEUPLOAD-30082).\n\n* Crash - An attacker sending crafted requests that could cause the system to crash. For Example,  [npm `ws` package](https://snyk.io/vuln/npm:ws:20171108)\n\n## Remediation\nUpgrade `com.fasterxml.jackson.core:jackson-databind` to version 2.13.1, 2.12.6 or higher.\n## References\n- [GitHub Commit](https://github.com/FasterXML/jackson-databind/commit/3ccde7d938fea547e598fdefe9a82cff37fed5cb)\n- [GitHub Issue](https://github.com/FasterXML/jackson-databind/issues/3328)\n",
+      "disclosureTime": "2021-12-25T19:19:59Z",
+      "exploit": "Not Defined",
+      "functions": [],
+      "fixedIn": [
+        "2.13.1",
+        "2.12.6"
+      ],
+      "id": "SNYK-JAVA-COMFASTERXMLJACKSONCORE-2326698",
+      "identifiers": {
+        "CWE": [
+          "CWE-400"
+        ],
+        "CVE": []
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2021-12-31T11:38:58.447854Z",
+      "moduleName": "com.fasterxml.jackson.core:jackson-databind",
+      "packageManager": "maven",
+      "packageName": "com.fasterxml.jackson.core:jackson-databind",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2021-12-26T15:34:31Z",
+      "references": [
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/FasterXML/jackson-databind/commit/3ccde7d938fea547e598fdefe9a82cff37fed5cb"
+        },
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/FasterXML/jackson-databind/issues/3328"
+        }
+      ],
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "title": "Denial of Service (DoS)",
+      "insights": {
+        "triageAdvice": null
+      },
+      "cvssDetails": [],
+      "functions_new": [],
+      "semver": {
+        "vulnerable": [
+          "[2.13.0,2.13.1)",
+          "[2.10.0.pr1,2.12.6)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "com.fasterxml.jackson.core",
+        "artifactId": "jackson-databind"
+      },
+      "severityWithCritical": "medium",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "org.springframework.boot:spring-boot-starter-actuator@2.3.0.M2",
+        "org.springframework.boot:spring-boot-actuator-autoconfigure@2.3.0.M2",
+        "com.fasterxml.jackson.core:jackson-databind@2.10.1"
+      ],
+      "upgradePath": [
+        false,
+        "org.springframework.boot:spring-boot-starter-actuator@2.5.8",
+        "org.springframework.boot:spring-boot-actuator-autoconfigure@2.5.8",
+        "com.fasterxml.jackson.core:jackson-databind@2.12.6"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "com.fasterxml.jackson.core:jackson-databind",
+      "version": "2.10.1"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "alternativeIds": [],
+      "creationTime": "2022-03-11T13:26:43.073121Z",
+      "credit": [
+        "Unknown"
+      ],
+      "cvssScore": 7.5,
+      "description": "## Overview\n[com.fasterxml.jackson.core:jackson-databind](https://github.com/FasterXML/jackson-databind) is a library which contains the general-purpose data-binding functionality and tree-model for Jackson Data Processor.\n\nAffected versions of this package are vulnerable to Denial of Service (DoS) via a large depth of nested objects.\n\n## Details\n\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its intended and legitimate users.\n\nUnlike other vulnerabilities, DoS attacks usually do not aim at breaching security. Rather, they are focused on making websites and services unavailable to genuine users resulting in downtime.\n\nOne popular Denial of Service vulnerability is DDoS (a Distributed Denial of Service), an attack that attempts to clog network pipes to the system by generating a large volume of traffic from many machines.\n\nWhen it comes to open source libraries, DoS vulnerabilities allow attackers to trigger such a crash or crippling of the service by using a flaw either in the application code or from the use of open source libraries.\n\nTwo common types of DoS vulnerabilities:\n\n* High CPU/Memory Consumption- An attacker sending crafted requests that could cause the system to take a disproportionate amount of time to process. For example, [commons-fileupload:commons-fileupload](SNYK-JAVA-COMMONSFILEUPLOAD-30082).\n\n* Crash - An attacker sending crafted requests that could cause the system to crash. For Example,  [npm `ws` package](https://snyk.io/vuln/npm:ws:20171108)\n\n## Remediation\nUpgrade `com.fasterxml.jackson.core:jackson-databind` to version 2.12.6.1, 2.13.2.1 or higher.\n## References\n- [GitHub Commit](https://github.com/FasterXML/jackson-databind/commit/fcfc4998ec23f0b1f7f8a9521c2b317b6c25892b)\n- [GitHub Issue](https://github.com/FasterXML/jackson-databind/issues/2816)\n- [GitHub PR](https://github.com/FasterXML/jackson-databind/pull/3416)\n",
+      "disclosureTime": "2022-03-11T13:18:25Z",
+      "exploit": "Not Defined",
+      "functions": [],
+      "fixedIn": [
+        "2.12.6.1",
+        "2.13.2.1"
+      ],
+      "id": "SNYK-JAVA-COMFASTERXMLJACKSONCORE-2421244",
+      "identifiers": {
+        "CWE": [
+          "CWE-400"
+        ],
+        "CVE": [
+          "CVE-2020-36518"
+        ]
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2022-04-01T09:33:51.425400Z",
+      "moduleName": "com.fasterxml.jackson.core:jackson-databind",
+      "packageManager": "maven",
+      "packageName": "com.fasterxml.jackson.core:jackson-databind",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2022-03-11T14:24:04Z",
+      "references": [
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/FasterXML/jackson-databind/commit/fcfc4998ec23f0b1f7f8a9521c2b317b6c25892b"
+        },
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/FasterXML/jackson-databind/issues/2816"
+        },
+        {
+          "title": "GitHub PR",
+          "url": "https://github.com/FasterXML/jackson-databind/pull/3416"
+        }
+      ],
+      "severity": "high",
+      "socialTrendAlert": false,
+      "title": "Denial of Service (DoS)",
+      "insights": {
+        "triageAdvice": null
+      },
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "severity": "high",
+          "modificationTime": "2022-05-17T11:03:02.563730Z"
+        },
+        {
+          "assigner": "NVD",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "severity": "high",
+          "modificationTime": "2022-07-26T01:11:22.556192Z"
+        },
+        {
+          "assigner": "RHEL",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "severity": "high",
+          "modificationTime": "2022-06-16T09:42:20.105532Z"
+        }
+      ],
+      "functions_new": [],
+      "semver": {
+        "vulnerable": [
+          "[, 2.12.6.1)",
+          "[2.13.0, 2.13.2.1)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "com.fasterxml.jackson.core",
+        "artifactId": "jackson-databind"
+      },
+      "severityWithCritical": "high",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "org.springframework.boot:spring-boot-starter-actuator@2.3.0.M2",
+        "org.springframework.boot:spring-boot-actuator-autoconfigure@2.3.0.M2",
+        "com.fasterxml.jackson.core:jackson-databind@2.10.1"
+      ],
+      "upgradePath": [
+        false,
+        "org.springframework.boot:spring-boot-starter-actuator@2.5.12",
+        "org.springframework.boot:spring-boot-actuator-autoconfigure@2.5.12",
+        "com.fasterxml.jackson.core:jackson-databind@2.12.6.1"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "com.fasterxml.jackson.core:jackson-databind",
+      "version": "2.10.1"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+      "alternativeIds": [],
+      "creationTime": "2020-09-22T12:18:22.742524Z",
+      "credit": [
+        "gstanchev"
+      ],
+      "cvssScore": 6.5,
+      "description": "## Overview\n[net.lingala.zip4j:zip4j](https://mvnrepository.com/artifact/net.lingala.zip4j/zip4j) is an open source java library to handle zip files.\n\nAffected versions of this package are vulnerable to Insecure Randomness. Both `StandardEncrypter` and `AES encrypter` uses `j.l.Random` to generate randomness for encryption operations instead of `SecureRandom`.\n## Remediation\nUpgrade `net.lingala.zip4j:zip4j` to version 2.6.3 or higher.\n## References\n- [GitHub Commit](https://github.com/srikanth-lingala/zip4j/commit/613279a7843045d180b6e5b0d64bc682178b3f5a)\n- [GitHub Issue](https://github.com/srikanth-lingala/zip4j/issues/241)\n",
+      "disclosureTime": "2020-09-21T13:55:28Z",
+      "exploit": "Not Defined",
+      "functions": [],
+      "fixedIn": [
+        "2.6.3"
+      ],
+      "id": "SNYK-JAVA-NETLINGALAZIP4J-1011359",
+      "identifiers": {
+        "CWE": [
+          "CWE-330"
+        ],
+        "CVE": []
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2020-10-07T15:27:52.823737Z",
+      "moduleName": "net.lingala.zip4j:zip4j",
+      "packageManager": "maven",
+      "packageName": "net.lingala.zip4j:zip4j",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2020-10-07T15:27:52.821397Z",
+      "references": [
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/srikanth-lingala/zip4j/commit/613279a7843045d180b6e5b0d64bc682178b3f5a"
+        },
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/srikanth-lingala/zip4j/issues/241"
+        }
+      ],
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "title": "Insecure Randomness",
+      "insights": {
+        "triageAdvice": null
+      },
+      "cvssDetails": [],
+      "functions_new": [],
+      "semver": {
+        "vulnerable": [
+          "[,2.6.3)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "net.lingala.zip4j",
+        "artifactId": "zip4j"
+      },
+      "severityWithCritical": "medium",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "net.lingala.zip4j:zip4j@1.3.1"
+      ],
+      "upgradePath": [
+        false,
+        "net.lingala.zip4j:zip4j@2.6.3"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "net.lingala.zip4j:zip4j",
+      "version": "1.3.1"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "alternativeIds": [],
+      "creationTime": "2021-02-15T15:54:18.806153Z",
+      "credit": [
+        "Martin D'Aloia"
+      ],
+      "cvssScore": 5.3,
+      "description": "## Overview\n[net.lingala.zip4j:zip4j](https://mvnrepository.com/artifact/net.lingala.zip4j/zip4j) is an open source java library to handle zip files.\n\nAffected versions of this package are vulnerable to NULL Pointer Dereference. A `ZipFile` can be constructed with a `null` `File` reference, leading to a null pointer exception on [this line](https://github.com/srikanth-lingala/zip4j/blob/b1d523cdf9cbe808b7a271095c3add7c877bb8e5/src/main/java/net/lingala/zip4j/ZipFile.java#L960) when an operation is carried.\n## Remediation\nUpgrade `net.lingala.zip4j:zip4j` to version 2.7.0 or higher.\n## References\n- [GitHub Commit](https://github.com/srikanth-lingala/zip4j/commit/7447ea64d038443d517522213977acb263521dfe)\n- [GitHub Issue](https://github.com/srikanth-lingala/zip4j/issues/263)\n",
+      "disclosureTime": "2021-02-15T04:08:30Z",
+      "exploit": "Not Defined",
+      "functions": [],
+      "fixedIn": [
+        "2.7.0"
+      ],
+      "id": "SNYK-JAVA-NETLINGALAZIP4J-1074967",
+      "identifiers": {
+        "CWE": [
+          "CWE-476"
+        ],
+        "CVE": []
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2021-02-15T17:04:57.478611Z",
+      "moduleName": "net.lingala.zip4j:zip4j",
+      "packageManager": "maven",
+      "packageName": "net.lingala.zip4j:zip4j",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2021-02-15T17:04:57.476473Z",
+      "references": [
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/srikanth-lingala/zip4j/commit/7447ea64d038443d517522213977acb263521dfe"
+        },
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/srikanth-lingala/zip4j/issues/263"
+        }
+      ],
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "title": "NULL Pointer Dereference",
+      "insights": {
+        "triageAdvice": null
+      },
+      "cvssDetails": [],
+      "functions_new": [],
+      "semver": {
+        "vulnerable": [
+          "[,2.7.0)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "net.lingala.zip4j",
+        "artifactId": "zip4j"
+      },
+      "severityWithCritical": "medium",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "net.lingala.zip4j:zip4j@1.3.1"
+      ],
+      "upgradePath": [
+        false,
+        "net.lingala.zip4j:zip4j@2.7.0"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "net.lingala.zip4j:zip4j",
+      "version": "1.3.1"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+      "alternativeIds": [],
+      "creationTime": "2018-05-30T12:32:02.349000Z",
+      "credit": [
+        "Snyk Security research Team"
+      ],
+      "cvssScore": 5.5,
+      "description": "## Overview\n\n[net.lingala.zip4j:zip4j](https://mvnrepository.com/artifact/net.lingala.zip4j/zip4j) is a open source java library to handle zip files.\n\n\nAffected versions of this package are vulnerable to Arbitrary File Write via Archive Extraction (Zip Slip).\nSuccessful exploitation of this vulnerability can result in remote command execution.\n\n## Details\nIt is exploited using a specially crafted zip archive, that holds path traversal filenames. When exploited, a filename in a malicious archive is concatenated to the target extraction directory, which results in the final path ending up outside of the target folder. For instance, a zip may hold a file with a \"../../file.exe\" location and thus break out of the target folder. If an executable or a configuration file is overwritten with a file containing malicious code, the problem can turn into an arbitrary code execution issue quite easily.\r\n\r\nThe following is an example of a zip archive with one benign file and one malicious file. Extracting the malicous file will result in traversing out of the target folder, ending up in `/root/.ssh/` overwriting the `authorized_keys` file:\r\n\r\n```\r\n\r\n+2018-04-15 22:04:29 ..... 19 19 good.txt\r\n\r\n+2018-04-15 22:04:42 ..... 20 20 ../../../../../../root/.ssh/authorized_keys\r\n\r\n```\n\n## Remediation\n\nUpgrade `net.lingala.zip4j:zip4j` to version 1.3.3 or higher.\n\n\n## References\n\n- [Zip Slip Advisory](https://github.com/snyk/zip-slip-vulnerability)\n\n- [Zip Slip Advisory](https://snyk.io/research/zip-slip-vulnerability)\n",
+      "disclosureTime": "2018-04-17T21:00:00Z",
+      "exploit": "Not Defined",
+      "functions": [
+        {
+          "functionId": {
+            "filePath": "net/lingala/zip4j/unzip/Unzip.java",
+            "className": "Unzip",
+            "functionName": "initExtractFile"
+          },
+          "version": [
+            "[,1.3.3)"
+          ]
+        }
+      ],
+      "fixedIn": [
+        "1.3.3"
+      ],
+      "id": "SNYK-JAVA-NETLINGALAZIP4J-31679",
+      "identifiers": {
+        "CWE": [
+          "CWE-29"
+        ],
+        "CVE": [
+          "CVE-2018-1002202"
+        ]
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2020-12-14T14:41:23.829780Z",
+      "moduleName": "net.lingala.zip4j:zip4j",
+      "packageManager": "maven",
+      "packageName": "net.lingala.zip4j:zip4j",
+      "patches": [],
+      "proprietary": true,
+      "publicationTime": "2018-05-31T07:32:02Z",
+      "references": [
+        {
+          "title": "Zip Slip Advisory",
+          "url": "https://github.com/snyk/zip-slip-vulnerability"
+        },
+        {
+          "title": "Zip Slip Advisory",
+          "url": "https://snyk.io/research/zip-slip-vulnerability"
+        }
+      ],
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "title": "Arbitrary File Write via Archive Extraction (Zip Slip)",
+      "insights": {
+        "triageAdvice": null
+      },
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "cvssV3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 6.5,
+          "severity": "medium",
+          "modificationTime": "2022-01-03T16:12:53.827122Z"
+        }
+      ],
+      "functions_new": [
+        {
+          "functionId": {
+            "className": "net.lingala.zip4j.unzip.Unzip",
+            "functionName": "initExtractFile"
+          },
+          "version": [
+            "[,1.3.3)"
+          ]
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "[0,1.3.3)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "net.lingala.zip4j",
+        "artifactId": "zip4j"
+      },
+      "severityWithCritical": "medium",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "net.lingala.zip4j:zip4j@1.3.1"
+      ],
+      "upgradePath": [
+        false,
+        "net.lingala.zip4j:zip4j@1.3.3"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "net.lingala.zip4j:zip4j",
+      "version": "1.3.1"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "alternativeIds": [],
+      "creationTime": "2020-10-13T13:44:05.103804Z",
+      "credit": [
+        "Unknown"
+      ],
+      "cvssScore": 5.6,
+      "description": "## Overview\n[org.apache.tomcat.embed:tomcat-embed-core](https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-core) is a Core Tomcat implementation.\n\nAffected versions of this package are vulnerable to HTTP Request Smuggling. If an HTTP/2 client connecting to Apache Tomcat exceeded the agreed maximum number of concurrent streams for a connection (in violation of the HTTP/2 protocol), it was possible that a subsequent request made on that connection could contain HTTP headers - including HTTP/2 pseudo headers - from a previous request rather than the intended headers. This could lead to users seeing responses for unexpected resources.\n## Remediation\nUpgrade `org.apache.tomcat.embed:tomcat-embed-core` to version 10.0.0-M8, 9.0.38, 8.5.58 or higher.\n## References\n- [Apache Security Advisory](https://lists.apache.org/thread.html/r4a390027eb27e4550142fac6c8317cc684b157ae314d31514747f307%40%3Cannounce.tomcat.apache.org%3E)\n- [GitHub Commit](https://github.com/apache/tomcat/commit/1bbc650cbc3f08d85a1ec6d803c47ae53a84f3bb)\n",
+      "disclosureTime": "2020-10-13T11:16:09Z",
+      "exploit": "Not Defined",
+      "functions": [
+        {
+          "functionId": {
+            "filePath": "org/apache/coyote/http2/Http2UpgradeHandler.java",
+            "className": "Http2UpgradeHandler",
+            "functionName": "headersEnd"
+          },
+          "version": [
+            "[10.0.0-M1,10.0.0-M8)",
+            "[9.0.0.M5, 9.0.38)",
+            "[8.5.1, 8.5.5)"
+          ]
+        },
+        {
+          "functionId": {
+            "filePath": "org/apache/coyote/http2/Http2Parser$Output.java",
+            "className": "Http2Parser$Output",
+            "functionName": "headersEnd"
+          },
+          "version": [
+            "[10.0.0-M1,10.0.0-M8)",
+            "[9.0.0.M5, 9.0.38)",
+            "[8.5.1, 8.5.5)"
+          ]
+        }
+      ],
+      "fixedIn": [
+        "10.0.0-M8",
+        "9.0.38",
+        "8.5.58"
+      ],
+      "id": "SNYK-JAVA-ORGAPACHETOMCATEMBED-1017119",
+      "identifiers": {
+        "CWE": [
+          "CWE-444"
+        ],
+        "CVE": [
+          "CVE-2020-13943"
+        ]
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2022-03-11T15:25:01.230725Z",
+      "moduleName": "org.apache.tomcat.embed:tomcat-embed-core",
+      "packageManager": "maven",
+      "packageName": "org.apache.tomcat.embed:tomcat-embed-core",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2020-10-13T14:27:35Z",
+      "references": [
+        {
+          "title": "Apache Security Advisory",
+          "url": "https://lists.apache.org/thread.html/r4a390027eb27e4550142fac6c8317cc684b157ae314d31514747f307%40%3Cannounce.tomcat.apache.org%3E"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/apache/tomcat/commit/1bbc650cbc3f08d85a1ec6d803c47ae53a84f3bb"
+        }
+      ],
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "title": "HTTP Request Smuggling",
+      "insights": {
+        "triageAdvice": null
+      },
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+          "cvssV3BaseScore": 5.3,
+          "severity": "medium",
+          "modificationTime": "2022-05-03T22:57:54.617064Z"
+        },
+        {
+          "assigner": "RHEL",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+          "cvssV3BaseScore": 5.3,
+          "severity": "medium",
+          "modificationTime": "2022-06-11T13:49:37.705145Z"
+        },
+        {
+          "assigner": "NVD",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+          "cvssV3BaseScore": 4.3,
+          "severity": "medium",
+          "modificationTime": "2022-01-03T18:03:03.546168Z"
+        }
+      ],
+      "functions_new": [
+        {
+          "functionId": {
+            "className": "org.apache.coyote.http2.Http2UpgradeHandler",
+            "functionName": "headersEnd"
+          },
+          "version": [
+            "[10.0.0-M1,10.0.0-M8)",
+            "[9.0.0.M5, 9.0.38)",
+            "[8.5.1, 8.5.5)"
+          ]
+        },
+        {
+          "functionId": {
+            "className": "org.apache.coyote.http2.Http2Parser$Output",
+            "functionName": "headersEnd"
+          },
+          "version": [
+            "[10.0.0-M1,10.0.0-M8)",
+            "[9.0.0.M5, 9.0.38)",
+            "[8.5.1, 8.5.5)"
+          ]
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "[10.0.0-M1,10.0.0-M8)",
+          "[9.0.0.M5, 9.0.38)",
+          "[8.5.1, 8.5.58)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "org.apache.tomcat.embed",
+        "artifactId": "tomcat-embed-core"
+      },
+      "severityWithCritical": "medium",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "org.springframework.boot:spring-boot-starter-web@2.3.0.M2",
+        "org.springframework.boot:spring-boot-starter-tomcat@2.3.0.M2",
+        "org.apache.tomcat.embed:tomcat-embed-core@9.0.31"
+      ],
+      "upgradePath": [
+        false,
+        "org.springframework.boot:spring-boot-starter-web@2.3.4.RELEASE",
+        "org.springframework.boot:spring-boot-starter-tomcat@2.3.4.RELEASE",
+        "org.apache.tomcat.embed:tomcat-embed-core@9.0.38"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.apache.tomcat.embed:tomcat-embed-core",
+      "version": "9.0.31"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N/E:P",
+      "alternativeIds": [],
+      "creationTime": "2020-12-04T11:31:43.593510Z",
+      "credit": [
+        "Unknown"
+      ],
+      "cvssScore": 5.3,
+      "description": "## Overview\n[org.apache.tomcat.embed:tomcat-embed-core](https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-core) is a Core Tomcat implementation.\n\nAffected versions of this package are vulnerable to Information Exposure. An HTTP request header value could be reused from the previous stream received on an HTTP/2 connection for the request associated with the subsequent stream. While this would most likely lead to an error and the closure of the HTTP/2 connection, it is possible that information could leak between requests.\n## Remediation\nUpgrade `org.apache.tomcat.embed:tomcat-embed-core` to version 8.5.60, 9.0.40, 10.0.0-M10 or higher.\n## References\n- [Apache Tomcat Bug Report](https://bz.apache.org/bugzilla/show_bug.cgi?id=64830)\n- [forese01 PoC](https://github.com/forse01/CVE-2020-17527-Tomcat)\n- [GitHub Commit](https://github.com/apache/tomcat/commit/d56293f816d6dc9e2b47107f208fa9e95db58c65)\n",
+      "disclosureTime": "2020-12-04T11:26:25Z",
+      "exploit": "Proof of Concept",
+      "functions": [
+        {
+          "functionId": {
+            "filePath": "org/apache/coyote/http2/HpackDecoder.java",
+            "className": "HpackDecoder",
+            "functionName": "readHuffmanString"
+          },
+          "version": [
+            "[8.5.0, 8.5.60)",
+            "[9.0.0, 9.0.40)",
+            "[10.0.0-M1, 10.0.0-M10)"
+          ]
+        },
+        {
+          "functionId": {
+            "filePath": "org/apache/coyote/http2/HpackDecoder.java",
+            "className": "HpackDecoder",
+            "functionName": "readHpackString"
+          },
+          "version": [
+            "[8.5.0, 8.5.60)",
+            "[9.0.0, 9.0.40)",
+            "[10.0.0-M1, 10.0.0-M10)"
+          ]
+        }
+      ],
+      "fixedIn": [
+        "8.5.60",
+        "9.0.40",
+        "10.0.0-M10"
+      ],
+      "id": "SNYK-JAVA-ORGAPACHETOMCATEMBED-1048292",
+      "identifiers": {
+        "CWE": [
+          "CWE-200"
+        ],
+        "CVE": [
+          "CVE-2020-17527"
+        ]
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2021-10-05T21:13:01.342169Z",
+      "moduleName": "org.apache.tomcat.embed:tomcat-embed-core",
+      "packageManager": "maven",
+      "packageName": "org.apache.tomcat.embed:tomcat-embed-core",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2020-12-04T15:22:53Z",
+      "references": [
+        {
+          "title": "Apache Tomcat Bug Report",
+          "url": "https://bz.apache.org/bugzilla/show_bug.cgi?id=64830"
+        },
+        {
+          "title": "forese01 PoC",
+          "url": "https://github.com/forse01/CVE-2020-17527-Tomcat"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/apache/tomcat/commit/d56293f816d6dc9e2b47107f208fa9e95db58c65"
+        }
+      ],
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "title": "Information Exposure",
+      "insights": {
+        "triageAdvice": null
+      },
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 7.5,
+          "severity": "high",
+          "modificationTime": "2022-05-03T22:46:38.103900Z"
+        },
+        {
+          "assigner": "NVD",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 7.5,
+          "severity": "high",
+          "modificationTime": "2022-05-13T01:11:05.851678Z"
+        },
+        {
+          "assigner": "RHEL",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 7.5,
+          "severity": "high",
+          "modificationTime": "2022-06-16T10:11:00.115936Z"
+        }
+      ],
+      "functions_new": [
+        {
+          "functionId": {
+            "className": "org.apache.coyote.http2.HpackDecoder",
+            "functionName": "readHuffmanString"
+          },
+          "version": [
+            "[8.5.0, 8.5.60)",
+            "[9.0.0, 9.0.40)",
+            "[10.0.0-M1, 10.0.0-M10)"
+          ]
+        },
+        {
+          "functionId": {
+            "className": "org.apache.coyote.http2.HpackDecoder",
+            "functionName": "readHpackString"
+          },
+          "version": [
+            "[8.5.0, 8.5.60)",
+            "[9.0.0, 9.0.40)",
+            "[10.0.0-M1, 10.0.0-M10)"
+          ]
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "[8.5.0, 8.5.60)",
+          "[9.0.0, 9.0.40)",
+          "[10.0.0-M1, 10.0.0-M10)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "org.apache.tomcat.embed",
+        "artifactId": "tomcat-embed-core"
+      },
+      "severityWithCritical": "medium",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "org.springframework.boot:spring-boot-starter-web@2.3.0.M2",
+        "org.springframework.boot:spring-boot-starter-tomcat@2.3.0.M2",
+        "org.apache.tomcat.embed:tomcat-embed-core@9.0.31"
+      ],
+      "upgradePath": [
+        false,
+        "org.springframework.boot:spring-boot-starter-web@2.3.7.RELEASE",
+        "org.springframework.boot:spring-boot-starter-tomcat@2.3.7.RELEASE",
+        "org.apache.tomcat.embed:tomcat-embed-core@9.0.41"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.apache.tomcat.embed:tomcat-embed-core",
+      "version": "9.0.31"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+      "alternativeIds": [],
+      "creationTime": "2021-01-18T14:28:00.981218Z",
+      "credit": [
+        "Ilja Brander"
+      ],
+      "cvssScore": 5.3,
+      "description": "## Overview\n[org.apache.tomcat.embed:tomcat-embed-core](https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-core) is a Core Tomcat implementation.\n\nAffected versions of this package are vulnerable to Information Disclosure. When serving resources from a network location using the NTFS file system, affected versions were susceptible to JSP source code disclosure in some configurations. The root cause was the unexpected behaviour of the JRE API `File.getCanonicalPath()` which in turn was caused by the inconsistent behaviour of the Windows API (FindFirstFileW) in some circumstances.\n## Remediation\nUpgrade `org.apache.tomcat.embed:tomcat-embed-core` to version 10.0.0-M10, 9.0.40, 8.5.60, 7.0.107 or higher.\n## References\n- [Apache Security Advisory](https://lists.apache.org/thread.html/r1595889b083e05986f42b944dc43060d6b083022260b6ea64d2cec52%40%3Cannounce.tomcat.apache.org%3E)\n- [Apache Tomcat 10.x Advisories](https://tomcat.apache.org/security-10.html)\n- [Apache Tomcat 7.x Advisories](https://tomcat.apache.org/security-7.html)\n- [Apache Tomcat 8.x Advisories](https://tomcat.apache.org/security-8.html)\n- [Apache Tomcat 9.x Advisories](https://tomcat.apache.org/security-9.html)\n- [GitHub Commit](https://github.com/apache/tomcat/commit/7f004ac4531c45f9a2a2d1470561fe135cf27bc2)\n",
+      "disclosureTime": "2021-01-14T17:09:09Z",
+      "exploit": "Not Defined",
+      "functions": [
+        {
+          "functionId": {
+            "filePath": "org/apache/catalina/webresources/AbstractFileResourceSet.java",
+            "className": "AbstractFileResourceSet",
+            "functionName": "file"
+          },
+          "version": [
+            "[10.0.0-M1,10.0.0-M10)",
+            "[9.0.0.M1,9.0.40)",
+            "[8.5.0,8.5.60)"
+          ]
+        }
+      ],
+      "fixedIn": [
+        "10.0.0-M10",
+        "9.0.40",
+        "8.5.60",
+        "7.0.107"
+      ],
+      "id": "SNYK-JAVA-ORGAPACHETOMCATEMBED-1061939",
+      "identifiers": {
+        "CWE": [
+          "CWE-200"
+        ],
+        "GHSA": [
+          "GHSA-2rvv-w9r2-rg7m"
+        ],
+        "CVE": [
+          "CVE-2021-24122"
+        ]
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2022-06-23T09:19:59.412347Z",
+      "moduleName": "org.apache.tomcat.embed:tomcat-embed-core",
+      "packageManager": "maven",
+      "packageName": "org.apache.tomcat.embed:tomcat-embed-core",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2021-01-14T17:44:10Z",
+      "references": [
+        {
+          "title": "Apache Security Advisory",
+          "url": "https://lists.apache.org/thread.html/r1595889b083e05986f42b944dc43060d6b083022260b6ea64d2cec52%40%3Cannounce.tomcat.apache.org%3E"
+        },
+        {
+          "title": "Apache Tomcat 10.x Advisories",
+          "url": "https://tomcat.apache.org/security-10.html"
+        },
+        {
+          "title": "Apache Tomcat 7.x Advisories",
+          "url": "https://tomcat.apache.org/security-7.html"
+        },
+        {
+          "title": "Apache Tomcat 8.x Advisories",
+          "url": "https://tomcat.apache.org/security-8.html"
+        },
+        {
+          "title": "Apache Tomcat 9.x Advisories",
+          "url": "https://tomcat.apache.org/security-9.html"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/apache/tomcat/commit/7f004ac4531c45f9a2a2d1470561fe135cf27bc2"
+        }
+      ],
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "title": "Information Disclosure",
+      "insights": {
+        "triageAdvice": "This vulnerability is only applicable on Windows operating system"
+      },
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "severity": "medium",
+          "modificationTime": "2022-05-03T22:35:43.326684Z"
+        },
+        {
+          "assigner": "RHEL",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "severity": "medium",
+          "modificationTime": "2022-06-16T10:28:05.919450Z"
+        },
+        {
+          "assigner": "NVD",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "severity": "medium",
+          "modificationTime": "2022-05-24T01:11:36.282750Z"
+        }
+      ],
+      "functions_new": [
+        {
+          "functionId": {
+            "className": "org.apache.catalina.webresources.AbstractFileResourceSet",
+            "functionName": "file"
+          },
+          "version": [
+            "[10.0.0-M1,10.0.0-M10)",
+            "[9.0.0.M1,9.0.40)",
+            "[8.5.0,8.5.60)"
+          ]
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "[10.0.0-M1,10.0.0-M10)",
+          "[9.0.0.M1,9.0.40)",
+          "[8.5.0,8.5.60)",
+          "[7.0.0,7.0.107)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "org.apache.tomcat.embed",
+        "artifactId": "tomcat-embed-core"
+      },
+      "severityWithCritical": "medium",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "org.springframework.boot:spring-boot-starter-web@2.3.0.M2",
+        "org.springframework.boot:spring-boot-starter-tomcat@2.3.0.M2",
+        "org.apache.tomcat.embed:tomcat-embed-core@9.0.31"
+      ],
+      "upgradePath": [
+        false,
+        "org.springframework.boot:spring-boot-starter-web@2.3.7.RELEASE",
+        "org.springframework.boot:spring-boot-starter-tomcat@2.3.7.RELEASE",
+        "org.apache.tomcat.embed:tomcat-embed-core@9.0.41"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.apache.tomcat.embed:tomcat-embed-core",
+      "version": "9.0.31"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "alternativeIds": [],
+      "creationTime": "2021-03-01T13:43:25.787203Z",
+      "credit": [
+        "Unknown"
+      ],
+      "cvssScore": 7,
+      "description": "## Overview\n[org.apache.tomcat.embed:tomcat-embed-core](https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-core) is a Core Tomcat implementation.\n\nAffected versions of this package are vulnerable to Remote Code Execution (RCE). The fix for CVE-2020-9484 was incomplete. When using Apache Tomcat with a configuration edge case that was highly unlikely to be used, the Tomcat instance was still vulnerable to CVE-2020-9494. Note that both the previously published prerequisites for CVE-2020-9484 and the previously published mitigations for CVE-2020-9484 also apply to this issue.\n## Remediation\nUpgrade `org.apache.tomcat.embed:tomcat-embed-core` to version 10.0.2, 9.0.43, 8.5.63, 7.0.108 or higher.\n## References\n- [Apache Security Advisory](https://lists.apache.org/thread.html/rfe62fbf9d4c314f166fe8c668e50e5d9dd882a99447f26f0367474bf%40%3Cannounce.tomcat.apache.org%3E)\n",
+      "disclosureTime": "2021-03-01T13:40:57Z",
+      "exploit": "Not Defined",
+      "functions": [],
+      "fixedIn": [
+        "10.0.2",
+        "9.0.43",
+        "8.5.63",
+        "7.0.108"
+      ],
+      "id": "SNYK-JAVA-ORGAPACHETOMCATEMBED-1080637",
+      "identifiers": {
+        "CWE": [
+          "CWE-94"
+        ],
+        "GHSA": [
+          "GHSA-jgwr-3qm3-26f3"
+        ],
+        "CVE": [
+          "CVE-2021-25329"
+        ]
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2021-08-12T15:12:07.697250Z",
+      "moduleName": "org.apache.tomcat.embed:tomcat-embed-core",
+      "packageManager": "maven",
+      "packageName": "org.apache.tomcat.embed:tomcat-embed-core",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2021-03-01T16:46:34Z",
+      "references": [
+        {
+          "title": "Apache Security Advisory",
+          "url": "https://lists.apache.org/thread.html/rfe62fbf9d4c314f166fe8c668e50e5d9dd882a99447f26f0367474bf%40%3Cannounce.tomcat.apache.org%3E"
+        }
+      ],
+      "severity": "high",
+      "socialTrendAlert": false,
+      "title": "Remote Code Execution (RCE)",
+      "insights": {
+        "triageAdvice": null
+      },
+      "cvssDetails": [
+        {
+          "assigner": "RHEL",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 7,
+          "severity": "high",
+          "modificationTime": "2022-06-11T13:56:23.894283Z"
+        },
+        {
+          "assigner": "SUSE",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 7,
+          "severity": "high",
+          "modificationTime": "2022-05-03T22:27:29.330942Z"
+        },
+        {
+          "assigner": "NVD",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 7,
+          "severity": "high",
+          "modificationTime": "2022-03-02T04:10:11.099343Z"
+        }
+      ],
+      "functions_new": [],
+      "semver": {
+        "vulnerable": [
+          "[10.0.0-M1, 10.0.2)",
+          "[9.0.0.M1, 9.0.43)",
+          "[8.5.0, 8.5.63)",
+          "[7.0.0, 7.0.108)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "org.apache.tomcat.embed",
+        "artifactId": "tomcat-embed-core"
+      },
+      "severityWithCritical": "high",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "org.springframework.boot:spring-boot-starter-web@2.3.0.M2",
+        "org.springframework.boot:spring-boot-starter-tomcat@2.3.0.M2",
+        "org.apache.tomcat.embed:tomcat-embed-core@9.0.31"
+      ],
+      "upgradePath": [
+        false,
+        "org.springframework.boot:spring-boot-starter-web@2.3.9.RELEASE",
+        "org.springframework.boot:spring-boot-starter-tomcat@2.3.9.RELEASE",
+        "org.apache.tomcat.embed:tomcat-embed-core@9.0.43"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.apache.tomcat.embed:tomcat-embed-core",
+      "version": "9.0.31"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:L",
+      "alternativeIds": [],
+      "creationTime": "2021-03-01T13:44:50.925633Z",
+      "credit": [
+        "Unknown"
+      ],
+      "cvssScore": 5.9,
+      "description": "## Overview\n[org.apache.tomcat.embed:tomcat-embed-core](https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-core) is a Core Tomcat implementation.\n\nAffected versions of this package are vulnerable to HTTP Request Smuggling. When responding to new h2c connection requests, Apache Tomcat could duplicate request headers and a limited amount of request body from one request to another meaning user A and user B could both see the results of user A's request.\n## Remediation\nUpgrade `org.apache.tomcat.embed:tomcat-embed-core` to version 10.0.2, 9.0.43, 8.5.63 or higher.\n## References\n- [Apache Security Advisory](https://lists.apache.org/thread.html/r7b95bc248603360501f18c8eb03bb6001ec0ee3296205b34b07105b7%40%3Cannounce.tomcat.apache.org%3E)\n- [GitHub Commit](https://github.com/apache/tomcat/commit/dd757c0a893e2e35f8bc1385d6967221ae8b9b9b)\n",
+      "disclosureTime": "2021-03-01T13:43:41Z",
+      "exploit": "Not Defined",
+      "functions": [],
+      "fixedIn": [
+        "10.0.2",
+        "9.0.43",
+        "8.5.63"
+      ],
+      "id": "SNYK-JAVA-ORGAPACHETOMCATEMBED-1080638",
+      "identifiers": {
+        "CWE": [
+          "CWE-444"
+        ],
+        "GHSA": [
+          "GHSA-j39c-c8hj-x4j3"
+        ],
+        "CVE": [
+          "CVE-2021-25122"
+        ]
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2021-10-05T20:49:56.575126Z",
+      "moduleName": "org.apache.tomcat.embed:tomcat-embed-core",
+      "packageManager": "maven",
+      "packageName": "org.apache.tomcat.embed:tomcat-embed-core",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2021-03-01T16:46:35Z",
+      "references": [
+        {
+          "title": "Apache Security Advisory",
+          "url": "https://lists.apache.org/thread.html/r7b95bc248603360501f18c8eb03bb6001ec0ee3296205b34b07105b7%40%3Cannounce.tomcat.apache.org%3E"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/apache/tomcat/commit/dd757c0a893e2e35f8bc1385d6967221ae8b9b9b"
+        }
+      ],
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "title": "HTTP Request Smuggling",
+      "insights": {
+        "triageAdvice": null
+      },
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 7.5,
+          "severity": "high",
+          "modificationTime": "2022-05-03T22:27:00.093996Z"
+        },
+        {
+          "assigner": "NVD",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 7.5,
+          "severity": "high",
+          "modificationTime": "2022-03-02T04:10:10.891532Z"
+        },
+        {
+          "assigner": "RHEL",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 7.5,
+          "severity": "high",
+          "modificationTime": "2022-06-11T13:56:43.419906Z"
+        }
+      ],
+      "functions_new": [],
+      "semver": {
+        "vulnerable": [
+          "[10.0.0-M1, 10.0.2)",
+          "[9.0.0.M1, 9.0.43)",
+          "[8.5.0, 8.5.63)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "org.apache.tomcat.embed",
+        "artifactId": "tomcat-embed-core"
+      },
+      "severityWithCritical": "medium",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "org.springframework.boot:spring-boot-starter-web@2.3.0.M2",
+        "org.springframework.boot:spring-boot-starter-tomcat@2.3.0.M2",
+        "org.apache.tomcat.embed:tomcat-embed-core@9.0.31"
+      ],
+      "upgradePath": [
+        false,
+        "org.springframework.boot:spring-boot-starter-web@2.3.9.RELEASE",
+        "org.springframework.boot:spring-boot-starter-tomcat@2.3.9.RELEASE",
+        "org.apache.tomcat.embed:tomcat-embed-core@9.0.43"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.apache.tomcat.embed:tomcat-embed-core",
+      "version": "9.0.31"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "alternativeIds": [],
+      "creationTime": "2021-10-05T20:53:52.856526Z",
+      "credit": [
+        "Thomas Wozenilek",
+        "David Frankson"
+      ],
+      "cvssScore": 7.5,
+      "description": "## Overview\n[org.apache.tomcat.embed:tomcat-embed-core](https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-core) is a Core Tomcat implementation.\n\nAffected versions of this package are vulnerable to Denial of Service (DoS). When Tomcat is configured to use NIO+OpenSSL or NIO2+OpenSSL for TLS, a specially-crafted packet could be used to trigger an infinite loop resulting in a denial of service.\n\n## Details\n\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its intended and legitimate users.\n\nUnlike other vulnerabilities, DoS attacks usually do not aim at breaching security. Rather, they are focused on making websites and services unavailable to genuine users resulting in downtime.\n\nOne popular Denial of Service vulnerability is DDoS (a Distributed Denial of Service), an attack that attempts to clog network pipes to the system by generating a large volume of traffic from many machines.\n\nWhen it comes to open source libraries, DoS vulnerabilities allow attackers to trigger such a crash or crippling of the service by using a flaw either in the application code or from the use of open source libraries.\n\nTwo common types of DoS vulnerabilities:\n\n* High CPU/Memory Consumption- An attacker sending crafted requests that could cause the system to take a disproportionate amount of time to process. For example, [commons-fileupload:commons-fileupload](SNYK-JAVA-COMMONSFILEUPLOAD-30082).\n\n* Crash - An attacker sending crafted requests that could cause the system to crash. For Example,  [npm `ws` package](https://snyk.io/vuln/npm:ws:20171108)\n\n## Remediation\nUpgrade `org.apache.tomcat.embed:tomcat-embed-core` to version 10.0.4, 8.5.64, 9.0.44 or higher.\n## References\n- [Apache Security Advisory](https://lists.apache.org/thread.html/rccdef0349fdf4fb73a4e4403095446d7fe6264e0a58e2df5c6799434%40%3Cannounce.tomcat.apache.org%3E)\n- [GitHub Commit](https://github.com/apache/tomcat/commit/34115fb3c83f6cd97772232316a492a4cc5729e0)\n- [RedHat Bugzilla Bug](https://bugzilla.redhat.com/show_bug.cgi?id=2004820)\n- [Tomcat Advisory 10](https://tomcat.apache.org/security-10.html#Fixed_in_Apache_Tomcat_10.0.4)\n- [Tomcat Advisory 8](https://tomcat.apache.org/security-8.html#Fixed_in_Apache_Tomcat_8.5.64)\n- [Tomcat Advisory 9](https://tomcat.apache.org/security-9.html#Fixed_in_Apache_Tomcat_9.0.44)\n",
+      "disclosureTime": "2021-09-15T00:00:00Z",
+      "exploit": "Not Defined",
+      "functions": [],
+      "fixedIn": [
+        "10.0.4",
+        "8.5.64",
+        "9.0.44"
+      ],
+      "id": "SNYK-JAVA-ORGAPACHETOMCATEMBED-1728264",
+      "identifiers": {
+        "CWE": [
+          "CWE-400"
+        ],
+        "CVE": [
+          "CVE-2021-41079"
+        ]
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2022-06-14T14:05:52.475115Z",
+      "moduleName": "org.apache.tomcat.embed:tomcat-embed-core",
+      "packageManager": "maven",
+      "packageName": "org.apache.tomcat.embed:tomcat-embed-core",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2021-09-16T15:47:52Z",
+      "references": [
+        {
+          "title": "Apache Security Advisory",
+          "url": "https://lists.apache.org/thread.html/rccdef0349fdf4fb73a4e4403095446d7fe6264e0a58e2df5c6799434%40%3Cannounce.tomcat.apache.org%3E"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/apache/tomcat/commit/34115fb3c83f6cd97772232316a492a4cc5729e0"
+        },
+        {
+          "title": "RedHat Bugzilla Bug",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2004820"
+        },
+        {
+          "title": "Tomcat Advisory 10",
+          "url": "https://tomcat.apache.org/security-10.html%23Fixed_in_Apache_Tomcat_10.0.4"
+        },
+        {
+          "title": "Tomcat Advisory 8",
+          "url": "https://tomcat.apache.org/security-8.html%23Fixed_in_Apache_Tomcat_8.5.64"
+        },
+        {
+          "title": "Tomcat Advisory 9",
+          "url": "https://tomcat.apache.org/security-9.html%23Fixed_in_Apache_Tomcat_9.0.44"
+        }
+      ],
+      "severity": "high",
+      "socialTrendAlert": false,
+      "title": "Denial of Service (DoS)",
+      "insights": {
+        "triageAdvice": "This vulnerability is only applicable on Tomcat configured with NIO/NIO2 Connectors + OpenSSL"
+      },
+      "cvssDetails": [
+        {
+          "assigner": "RHEL",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "severity": "high",
+          "modificationTime": "2022-06-16T09:40:10.539295Z"
+        },
+        {
+          "assigner": "SUSE",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "severity": "medium",
+          "modificationTime": "2022-05-03T21:25:24.340062Z"
+        },
+        {
+          "assigner": "NVD",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "severity": "high",
+          "modificationTime": "2022-01-03T16:49:42.234053Z"
+        }
+      ],
+      "functions_new": [],
+      "semver": {
+        "vulnerable": [
+          "[10.0.0, 10.0.4)",
+          "[8.0.0, 8.5.64)",
+          "[9.0.0, 9.0.44)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "org.apache.tomcat.embed",
+        "artifactId": "tomcat-embed-core"
+      },
+      "severityWithCritical": "high",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "org.springframework.boot:spring-boot-starter-web@2.3.0.M2",
+        "org.springframework.boot:spring-boot-starter-tomcat@2.3.0.M2",
+        "org.apache.tomcat.embed:tomcat-embed-core@9.0.31"
+      ],
+      "upgradePath": [
+        false,
+        "org.springframework.boot:spring-boot-starter-web@2.3.10.RELEASE",
+        "org.springframework.boot:spring-boot-starter-tomcat@2.3.10.RELEASE",
+        "org.apache.tomcat.embed:tomcat-embed-core@9.0.45"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.apache.tomcat.embed:tomcat-embed-core",
+      "version": "9.0.31"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+      "alternativeIds": [],
+      "creationTime": "2021-10-05T21:15:14.236842Z",
+      "credit": [
+        "@ilja.farber"
+      ],
+      "cvssScore": 4.8,
+      "description": "## Overview\n\n[org.apache.tomcat.embed:tomcat-embed-core](https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-core) is a Core Tomcat implementation.\n\n\nAffected versions of this package are vulnerable to Improper Input Validation.\nQueries made by the JNDI Realm did not always correctly escape parameters. Parameter values could be sourced from user provided data (e.g., user names) as well as configuration data provided by an administrator.\r\nIn limited circumstances it was possible for users to authenticate using variations of their user name and/or to bypass some of the protection provided by the LockOut Realm.\n\n## Remediation\n\nUpgrade `org.apache.tomcat.embed:tomcat-embed-core` to version 10.0.6, 9.0.46, 8.5.66, 7.0.109 or higher.\n\n\n## References\n\n- [Apache Security Advisory](https://lists.apache.org/thread.html/r59f9ef03929d32120f91f4ea7e6e79edd5688d75d0a9b65fd26d1fe8%40%3Cannounce.tomcat.apache.org%3E)\n\n- [GitHub Commit](https://github.com/apache/tomcat/commit/17208c645d68d2af1444ee8c64f36a9b8f0ba76f)\n\n- [GitHub Commit](https://github.com/apache/tomcat/commit/81f16b0a7186ed02efbfac336589d6cff28d1e89)\n\n- [GitHub Commit](https://github.com/apache/tomcat/commit/b930d0b3161d9ec78d5fa57f886ed2de4680518b)\n\n- [GitHub Commit](https://github.com/apache/tomcat/commit/bd4d1fbe9146dff4714130594afd668406a6a5ef)\n\n- [GitHub Commit](https://github.com/apache/tomcat/commit/d5303a506c7533803d2b3bc46e6120ce673a6667)\n\n- [GitHub Commit](https://github.com/apache/tomcat/commit/eeb7351219bd8803c0053e1e80444664a7cf5b51)\n\n- [GitHub Commit](https://github.com/apache/tomcat/commit/f4d9bdef53ec009b7717620d890465fa273721a6)\n\n- [Issue](https://bz.apache.org/bugzilla/show_bug.cgi?id=65224)\n",
+      "disclosureTime": "2021-07-13T12:43:30Z",
+      "exploit": "Not Defined",
+      "functions": [],
+      "fixedIn": [
+        "10.0.6",
+        "9.0.46",
+        "8.5.66",
+        "7.0.109"
+      ],
+      "id": "SNYK-JAVA-ORGAPACHETOMCATEMBED-1728265",
+      "identifiers": {
+        "CWE": [
+          "CWE-20"
+        ],
+        "CVE": [
+          "CVE-2021-30640"
+        ]
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2021-10-05T21:15:14.236867Z",
+      "moduleName": "org.apache.tomcat.embed:tomcat-embed-core",
+      "packageManager": "maven",
+      "packageName": "org.apache.tomcat.embed:tomcat-embed-core",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2021-07-13T15:29:18Z",
+      "references": [
+        {
+          "title": "Apache Security Advisory",
+          "url": "https://lists.apache.org/thread.html/r59f9ef03929d32120f91f4ea7e6e79edd5688d75d0a9b65fd26d1fe8%40%3Cannounce.tomcat.apache.org%3E"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/apache/tomcat/commit/17208c645d68d2af1444ee8c64f36a9b8f0ba76f"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/apache/tomcat/commit/81f16b0a7186ed02efbfac336589d6cff28d1e89"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/apache/tomcat/commit/b930d0b3161d9ec78d5fa57f886ed2de4680518b"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/apache/tomcat/commit/bd4d1fbe9146dff4714130594afd668406a6a5ef"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/apache/tomcat/commit/d5303a506c7533803d2b3bc46e6120ce673a6667"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/apache/tomcat/commit/eeb7351219bd8803c0053e1e80444664a7cf5b51"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/apache/tomcat/commit/f4d9bdef53ec009b7717620d890465fa273721a6"
+        },
+        {
+          "title": "Issue",
+          "url": "https://bz.apache.org/bugzilla/show_bug.cgi?id=65224"
+        }
+      ],
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "title": "Improper Input Validation",
+      "insights": {
+        "triageAdvice": null
+      },
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H/A:N",
+          "cvssV3BaseScore": 6.5,
+          "severity": "medium",
+          "modificationTime": "2022-07-13T13:11:40.798687Z"
+        },
+        {
+          "assigner": "RHEL",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H/A:N",
+          "cvssV3BaseScore": 6.5,
+          "severity": "medium",
+          "modificationTime": "2022-06-11T19:45:37.537459Z"
+        },
+        {
+          "assigner": "SUSE",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H/A:N",
+          "cvssV3BaseScore": 6.5,
+          "severity": "medium",
+          "modificationTime": "2022-05-03T21:24:00.170002Z"
+        }
+      ],
+      "functions_new": [],
+      "semver": {
+        "vulnerable": [
+          "[10.0.0-M1,10.0.6)",
+          "[9.0.0.M1,9.0.46)",
+          "[8.5.0,8.5.66)",
+          "[7.0.0,7.0.109)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "org.apache.tomcat.embed",
+        "artifactId": "tomcat-embed-core"
+      },
+      "severityWithCritical": "medium",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "org.springframework.boot:spring-boot-starter-web@2.3.0.M2",
+        "org.springframework.boot:spring-boot-starter-tomcat@2.3.0.M2",
+        "org.apache.tomcat.embed:tomcat-embed-core@9.0.31"
+      ],
+      "upgradePath": [
+        false,
+        "org.springframework.boot:spring-boot-starter-web@2.3.11.RELEASE",
+        "org.springframework.boot:spring-boot-starter-tomcat@2.3.11.RELEASE",
+        "org.apache.tomcat.embed:tomcat-embed-core@9.0.46"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.apache.tomcat.embed:tomcat-embed-core",
+      "version": "9.0.31"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "alternativeIds": [],
+      "creationTime": "2021-10-05T21:23:59.821920Z",
+      "credit": [
+        "Bahruz Jabiyev of NEU SecLab",
+        "Steven Sprecher of NEU SecLab",
+        "Kaan Onarlioglu of NEU SecLab"
+      ],
+      "cvssScore": 5.3,
+      "description": "## Overview\n[org.apache.tomcat.embed:tomcat-embed-core](https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-core) is a Core Tomcat implementation.\n\nAffected versions of this package are vulnerable to HTTP Request Smuggling. Tomcat does not correctly parse the HTTP transfer-encoding request header in some circumstances, leading to the possibility of request smuggling when used with a reverse proxy.\r\n\r\nSpecifically, Tomcat incorrectly ignores the transfer encoding header if the client declared it would only accept an HTTP/1.0 response; it honours the identify encoding; and it does not ensure that, if present, the chunked encoding was the final encoding.\n## Remediation\nUpgrade `org.apache.tomcat.embed:tomcat-embed-core` to version 10.0.7, 9.0.48, 8.5.68 or higher.\n## References\n- [Apache Security Advisory](https://lists.apache.org/thread.html/r612a79269b0d5e5780c62dfd34286a8037232fec0bc6f1a7e60c9381%40%3Cannounce.tomcat.apache.org%3E)\n- [GitHub Commit](https://github.com/apache/tomcat/commit/19d11556d0db99df291df33605f137976d152475)\n- [GitHub Commit](https://github.com/apache/tomcat/commit/506134f957a4be2c5b4a9334f7b3435fc954dbc1)\n- [GitHub Commit](https://github.com/apache/tomcat/commit/eee0d024c1b3171560c92eaba79dd6eb8eb11bcd)\n- [RedHat Bugzilla Bug](https://bugzilla.redhat.com/show_bug.cgi?id=1981533)\n",
+      "disclosureTime": "2021-07-13T13:16:46Z",
+      "exploit": "Not Defined",
+      "functions": [],
+      "fixedIn": [
+        "10.0.7",
+        "9.0.48",
+        "8.5.68"
+      ],
+      "id": "SNYK-JAVA-ORGAPACHETOMCATEMBED-1728266",
+      "identifiers": {
+        "CWE": [
+          "CWE-444"
+        ],
+        "CVE": [
+          "CVE-2021-33037"
+        ]
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2021-10-05T21:23:59.821943Z",
+      "moduleName": "org.apache.tomcat.embed:tomcat-embed-core",
+      "packageManager": "maven",
+      "packageName": "org.apache.tomcat.embed:tomcat-embed-core",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2021-07-13T15:29:18Z",
+      "references": [
+        {
+          "title": "Apache Security Advisory",
+          "url": "https://lists.apache.org/thread.html/r612a79269b0d5e5780c62dfd34286a8037232fec0bc6f1a7e60c9381%40%3Cannounce.tomcat.apache.org%3E"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/apache/tomcat/commit/19d11556d0db99df291df33605f137976d152475"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/apache/tomcat/commit/506134f957a4be2c5b4a9334f7b3435fc954dbc1"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/apache/tomcat/commit/eee0d024c1b3171560c92eaba79dd6eb8eb11bcd"
+        },
+        {
+          "title": "RedHat Bugzilla Bug",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1981533"
+        }
+      ],
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "title": "HTTP Request Smuggling",
+      "insights": {
+        "triageAdvice": null
+      },
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 4.3,
+          "severity": "medium",
+          "modificationTime": "2022-05-03T21:24:36.388510Z"
+        },
+        {
+          "assigner": "RHEL",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 4.3,
+          "severity": "medium",
+          "modificationTime": "2022-06-11T19:45:34.361586Z"
+        },
+        {
+          "assigner": "NVD",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+          "cvssV3BaseScore": 5.3,
+          "severity": "medium",
+          "modificationTime": "2022-05-13T01:11:00.480249Z"
+        }
+      ],
+      "functions_new": [],
+      "semver": {
+        "vulnerable": [
+          "[10.0.0-M1,10.0.7)",
+          "[9.0.0.M1,9.0.48)",
+          "[8.5.0,8.5.68)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "org.apache.tomcat.embed",
+        "artifactId": "tomcat-embed-core"
+      },
+      "severityWithCritical": "medium",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "org.springframework.boot:spring-boot-starter-web@2.3.0.M2",
+        "org.springframework.boot:spring-boot-starter-tomcat@2.3.0.M2",
+        "org.apache.tomcat.embed:tomcat-embed-core@9.0.31"
+      ],
+      "upgradePath": [
+        false,
+        "org.springframework.boot:spring-boot-starter-web@2.4.8",
+        "org.springframework.boot:spring-boot-starter-tomcat@2.4.8",
+        "org.apache.tomcat.embed:tomcat-embed-core@9.0.48"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.apache.tomcat.embed:tomcat-embed-core",
+      "version": "9.0.31"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:P",
+      "alternativeIds": [],
+      "creationTime": "2021-10-05T21:27:17.149428Z",
+      "credit": [
+        "Unknown"
+      ],
+      "cvssScore": 7.5,
+      "description": "## Overview\n[org.apache.tomcat.embed:tomcat-embed-core](https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-core) is a Core Tomcat implementation.\n\nAffected versions of this package are vulnerable to Denial of Service (DoS). A specially crafted sequence of HTTP/2 requests could trigger high CPU usage for several seconds. If a sufficient number of such requests were made on concurrent HTTP/2 connections, the server could become unresponsive.\n\n## Details\n\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its intended and legitimate users.\n\nUnlike other vulnerabilities, DoS attacks usually do not aim at breaching security. Rather, they are focused on making websites and services unavailable to genuine users resulting in downtime.\n\nOne popular Denial of Service vulnerability is DDoS (a Distributed Denial of Service), an attack that attempts to clog network pipes to the system by generating a large volume of traffic from many machines.\n\nWhen it comes to open source libraries, DoS vulnerabilities allow attackers to trigger such a crash or crippling of the service by using a flaw either in the application code or from the use of open source libraries.\n\nTwo common types of DoS vulnerabilities:\n\n* High CPU/Memory Consumption- An attacker sending crafted requests that could cause the system to take a disproportionate amount of time to process. For example, [commons-fileupload:commons-fileupload](SNYK-JAVA-COMMONSFILEUPLOAD-30082).\n\n* Crash - An attacker sending crafted requests that could cause the system to crash. For Example,  [npm `ws` package](https://snyk.io/vuln/npm:ws:20171108)\n\n## Remediation\nUpgrade `org.apache.tomcat.embed:tomcat-embed-core` to version 8.5.56, 9.0.36, 10.0.0-M6 or higher.\n## References\n- [Apache Security Advisory](https://lists.apache.org/thread.html/r5541ef6b6b68b49f76fc4c45695940116da2bcbe0312ef204a00a2e0%40%3Cannounce.tomcat.apache.org%3E)\n- [ASF Bugzilla](https://bz.apache.org/bugzilla/show_bug.cgi?id=64467)\n- [GitHub Commit](https://github.com/apache/tomcat/commit/9434a44d3449d620b1be70206819f8275b4a7509)\n- [PoC](https://github.com/rusakovichma/tomcat-embed-core-9.0.31-CVE-2020-11996/blob/master/test/org/apache/coyote/http2/TestHttp2Section_5_1.java)\n",
+      "disclosureTime": "2020-06-28T06:37:19Z",
+      "exploit": "Proof of Concept",
+      "functions": [],
+      "fixedIn": [
+        "8.5.56",
+        "9.0.36",
+        "10.0.0-M6"
+      ],
+      "id": "SNYK-JAVA-ORGAPACHETOMCATEMBED-1728268",
+      "identifiers": {
+        "CWE": [
+          "CWE-400"
+        ],
+        "CVE": [
+          "CVE-2020-11996"
+        ]
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2021-10-05T21:27:17.149445Z",
+      "moduleName": "org.apache.tomcat.embed:tomcat-embed-core",
+      "packageManager": "maven",
+      "packageName": "org.apache.tomcat.embed:tomcat-embed-core",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2020-06-28T15:06:37Z",
+      "references": [
+        {
+          "title": "Apache Security Advisory",
+          "url": "https://lists.apache.org/thread.html/r5541ef6b6b68b49f76fc4c45695940116da2bcbe0312ef204a00a2e0%40%3Cannounce.tomcat.apache.org%3E"
+        },
+        {
+          "title": "ASF Bugzilla",
+          "url": "https://bz.apache.org/bugzilla/show_bug.cgi?id=64467"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/apache/tomcat/commit/9434a44d3449d620b1be70206819f8275b4a7509"
+        },
+        {
+          "title": "PoC",
+          "url": "https://github.com/rusakovichma/tomcat-embed-core-9.0.31-CVE-2020-11996/blob/master/test/org/apache/coyote/http2/TestHttp2Section_5_1.java"
+        }
+      ],
+      "severity": "high",
+      "socialTrendAlert": false,
+      "title": "Denial of Service (DoS)",
+      "insights": {
+        "triageAdvice": null
+      },
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 5.3,
+          "severity": "medium",
+          "modificationTime": "2022-05-03T23:15:30.364090Z"
+        },
+        {
+          "assigner": "RHEL",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "severity": "high",
+          "modificationTime": "2022-06-11T13:47:58.688162Z"
+        },
+        {
+          "assigner": "NVD",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "severity": "high",
+          "modificationTime": "2022-01-03T18:02:20.506395Z"
+        }
+      ],
+      "functions_new": [],
+      "semver": {
+        "vulnerable": [
+          "[8.5.0,8.5.56)",
+          "[9.0.0.M1,9.0.36)",
+          "[10.0.0-M1,10.0.0-M6)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "org.apache.tomcat.embed",
+        "artifactId": "tomcat-embed-core"
+      },
+      "severityWithCritical": "high",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "org.springframework.boot:spring-boot-starter-web@2.3.0.M2",
+        "org.springframework.boot:spring-boot-starter-tomcat@2.3.0.M2",
+        "org.apache.tomcat.embed:tomcat-embed-core@9.0.31"
+      ],
+      "upgradePath": [
+        false,
+        "org.springframework.boot:spring-boot-starter-web@2.3.1.RELEASE",
+        "org.springframework.boot:spring-boot-starter-tomcat@2.3.1.RELEASE",
+        "org.apache.tomcat.embed:tomcat-embed-core@9.0.36"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.apache.tomcat.embed:tomcat-embed-core",
+      "version": "9.0.31"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "alternativeIds": [],
+      "creationTime": "2022-03-02T11:45:07.718201Z",
+      "credit": [
+        "Trung Pham"
+      ],
+      "cvssScore": 7,
+      "description": "## Overview\n[org.apache.tomcat.embed:tomcat-embed-core](https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-core) is a Core Tomcat implementation.\n\nAffected versions of this package are vulnerable to Privilege Escalation via a `time of check, time of use` vulnerability that allows a local attacker to perform actions with the privileges of the user that the Tomcat process is using. \r\nThis issue is only exploitable when Tomcat is configured to persist sessions using the FileStore.\n## Remediation\nUpgrade `org.apache.tomcat.embed:tomcat-embed-core` to version 8.5.75, 9.0.58, 10.0.16, 10.1.0-M10 or higher.\n## References\n- [Apache Pony Mail](https://lists.apache.org/thread/l8x62p3k19yfcb208jo4zrb83k5mfwg9)\n- [GitHub Commit](https://github.com/apache/tomcat/commit/bb33048e3f9b4f2b70e4da2e6c4e34ca89023b1b)\n- [RedHat Bugzilla Bug](https://bugzilla.redhat.com/show_bug.cgi?id=2047417)\n",
+      "disclosureTime": "2022-01-26T00:00:00Z",
+      "exploit": "Not Defined",
+      "functions": [],
+      "fixedIn": [
+        "8.5.75",
+        "9.0.58",
+        "10.0.16",
+        "10.1.0-M10"
+      ],
+      "id": "SNYK-JAVA-ORGAPACHETOMCATEMBED-2414084",
+      "identifiers": {
+        "CWE": [
+          "CWE-264"
+        ],
+        "CVE": [
+          "CVE-2022-23181"
+        ]
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2022-03-02T16:30:07.949726Z",
+      "moduleName": "org.apache.tomcat.embed:tomcat-embed-core",
+      "packageManager": "maven",
+      "packageName": "org.apache.tomcat.embed:tomcat-embed-core",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2022-01-28T14:50:31Z",
+      "references": [
+        {
+          "title": "Apache Pony Mail",
+          "url": "https://lists.apache.org/thread/l8x62p3k19yfcb208jo4zrb83k5mfwg9"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/apache/tomcat/commit/bb33048e3f9b4f2b70e4da2e6c4e34ca89023b1b"
+        },
+        {
+          "title": "RedHat Bugzilla Bug",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2047417"
+        }
+      ],
+      "severity": "high",
+      "socialTrendAlert": false,
+      "title": "Privilege Escalation",
+      "insights": {
+        "triageAdvice": null
+      },
+      "cvssDetails": [
+        {
+          "assigner": "RHEL",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 7,
+          "severity": "high",
+          "modificationTime": "2022-08-03T20:19:09.662473Z"
+        },
+        {
+          "assigner": "SUSE",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 7,
+          "severity": "high",
+          "modificationTime": "2022-06-22T11:05:55.516918Z"
+        },
+        {
+          "assigner": "NVD",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 7,
+          "severity": "high",
+          "modificationTime": "2022-07-30T13:11:10.304623Z"
+        }
+      ],
+      "functions_new": [],
+      "semver": {
+        "vulnerable": [
+          "[8.5.55,8.5.75)",
+          "[9.0.0, 9.0.58)",
+          "[10.0.0-M1, 10.0.16)",
+          "[10.1.0-M1, 10.1.0-M10)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "org.apache.tomcat.embed",
+        "artifactId": "tomcat-embed-core"
+      },
+      "severityWithCritical": "high",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "org.springframework.boot:spring-boot-starter-web@2.3.0.M2",
+        "org.springframework.boot:spring-boot-starter-tomcat@2.3.0.M2",
+        "org.apache.tomcat.embed:tomcat-embed-core@9.0.31"
+      ],
+      "upgradePath": [
+        false,
+        "org.springframework.boot:spring-boot-starter-web@2.5.10",
+        "org.springframework.boot:spring-boot-starter-tomcat@2.5.10",
+        "org.apache.tomcat.embed:tomcat-embed-core@9.0.58"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.apache.tomcat.embed:tomcat-embed-core",
+      "version": "9.0.31"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:F",
+      "alternativeIds": [],
+      "creationTime": "2020-05-21T15:46:46.394901Z",
+      "credit": [
+        "Apache Tomcat Security Team"
+      ],
+      "cvssScore": 8.1,
+      "description": "## Overview\n[org.apache.tomcat.embed:tomcat-embed-core](https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-core) is a Core Tomcat implementation.\n\nAffected versions of this package are vulnerable to Remote Code Execution (RCE). If an attacker is able to control the contents and name of a file on the server; and the server is configured to use the PersistenceManager with a FileStore; and the PersistenceManager is configured with sessionAttributeValueClassNameFilter=\"null\" (the default unless a SecurityManager is used) or a sufficiently lax filter to allow the attacker provided object to be deserialized; and the attacker knows the relative file path from the storage location used by FileStore to the file the attacker has control over; then, using a specifically crafted request, the attacker will be able to trigger remote code execution via deserialization of the file under their control.\n## Remediation\nUpgrade `org.apache.tomcat.embed:tomcat-embed-core` to version 10.0.0-M5, 9.0.35, 8.5.55, 7.0.104 or higher.\n## References\n- [Blog Post](https://www.redtimmy.com/java-hacking/apache-tomcat-rce-by-deserialization-cve-2020-9484-write-up-and-exploit/)\n- [Exploit Code](https://github.com/masahiro331/CVE-2020-9484)\n- [GitHub Commit](https://github.com/apache/tomcat/commit/3aa8f28db7efb311cdd1b6fe15a9cd3b167a2222)\n",
+      "disclosureTime": "2020-05-21T07:10:43Z",
+      "exploit": "Functional",
+      "functions": [
+        {
+          "functionId": {
+            "filePath": "org/apache/catalina/session/FileStore.java",
+            "className": "FileStore",
+            "functionName": "file"
+          },
+          "version": [
+            "[10.0.0-M1, 10.0.0-M5)",
+            "[9.0.0M1, 9.0.35)",
+            "[8.5.0, 8.5.55)",
+            "[7.0.0, 7.0.104)"
+          ]
+        }
+      ],
+      "fixedIn": [
+        "10.0.0-M5",
+        "9.0.35",
+        "8.5.55",
+        "7.0.104"
+      ],
+      "id": "SNYK-JAVA-ORGAPACHETOMCATEMBED-570072",
+      "identifiers": {
+        "CWE": [
+          "CWE-94"
+        ],
+        "CVE": [
+          "CVE-2020-9484"
+        ]
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2022-02-08T15:25:00.440672Z",
+      "moduleName": "org.apache.tomcat.embed:tomcat-embed-core",
+      "packageManager": "maven",
+      "packageName": "org.apache.tomcat.embed:tomcat-embed-core",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2020-05-20T07:22:27Z",
+      "references": [
+        {
+          "title": "Blog Post",
+          "url": "https://www.redtimmy.com/java-hacking/apache-tomcat-rce-by-deserialization-cve-2020-9484-write-up-and-exploit/"
+        },
+        {
+          "title": "Exploit Code",
+          "url": "https://github.com/masahiro331/CVE-2020-9484"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/apache/tomcat/commit/3aa8f28db7efb311cdd1b6fe15a9cd3b167a2222"
+        }
+      ],
+      "severity": "high",
+      "socialTrendAlert": false,
+      "title": "Remote Code Execution (RCE)",
+      "insights": {
+        "triageAdvice": null
+      },
+      "cvssDetails": [
+        {
+          "assigner": "RHEL",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 7,
+          "severity": "high",
+          "modificationTime": "2022-06-11T13:54:51.466818Z"
+        },
+        {
+          "assigner": "SUSE",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 7.5,
+          "severity": "high",
+          "modificationTime": "2022-05-03T23:21:31.621596Z"
+        },
+        {
+          "assigner": "NVD",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 7,
+          "severity": "high",
+          "modificationTime": "2022-07-26T01:11:35.244657Z"
+        }
+      ],
+      "functions_new": [
+        {
+          "functionId": {
+            "className": "org.apache.catalina.session.FileStore",
+            "functionName": "file"
+          },
+          "version": [
+            "[10.0.0-M1, 10.0.0-M5)",
+            "[9.0.0M1, 9.0.35)",
+            "[8.5.0, 8.5.55)",
+            "[7.0.0, 7.0.104)"
+          ]
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "[10.0.0-M1, 10.0.0-M5)",
+          "[9.0.0M1, 9.0.35)",
+          "[8.5.0, 8.5.55)",
+          "[7.0.0, 7.0.104)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "org.apache.tomcat.embed",
+        "artifactId": "tomcat-embed-core"
+      },
+      "severityWithCritical": "high",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "org.springframework.boot:spring-boot-starter-web@2.3.0.M2",
+        "org.springframework.boot:spring-boot-starter-tomcat@2.3.0.M2",
+        "org.apache.tomcat.embed:tomcat-embed-core@9.0.31"
+      ],
+      "upgradePath": [
+        false,
+        "org.springframework.boot:spring-boot-starter-web@2.3.0.RELEASE",
+        "org.springframework.boot:spring-boot-starter-tomcat@2.3.0.RELEASE",
+        "org.apache.tomcat.embed:tomcat-embed-core@9.0.35"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.apache.tomcat.embed:tomcat-embed-core",
+      "version": "9.0.31"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "alternativeIds": [],
+      "creationTime": "2020-07-15T10:19:05.157835Z",
+      "credit": [
+        "Unknown"
+      ],
+      "cvssScore": 5.3,
+      "description": "## Overview\n[org.apache.tomcat.embed:tomcat-embed-core](https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-core) is a Core Tomcat implementation.\n\nAffected versions of this package are vulnerable to Denial of Service (DoS). An `h2c` direct connection did not release the `HTTP/1.1` processor after the upgrade to `HTTP/2`. If a sufficient number of such requests are made, an `OutOfMemoryException` could occur leading to a denial of service.\n\n## Details\n\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its intended and legitimate users.\n\nUnlike other vulnerabilities, DoS attacks usually do not aim at breaching security. Rather, they are focused on making websites and services unavailable to genuine users resulting in downtime.\n\nOne popular Denial of Service vulnerability is DDoS (a Distributed Denial of Service), an attack that attempts to clog network pipes to the system by generating a large volume of traffic from many machines.\n\nWhen it comes to open source libraries, DoS vulnerabilities allow attackers to trigger such a crash or crippling of the service by using a flaw either in the application code or from the use of open source libraries.\n\nTwo common types of DoS vulnerabilities:\n\n* High CPU/Memory Consumption- An attacker sending crafted requests that could cause the system to take a disproportionate amount of time to process. For example, [commons-fileupload:commons-fileupload](SNYK-JAVA-COMMONSFILEUPLOAD-30082).\n\n* Crash - An attacker sending crafted requests that could cause the system to crash. For Example,  [npm `ws` package](https://snyk.io/vuln/npm:ws:20171108)\n\n## Remediation\nUpgrade `org.apache.tomcat.embed:tomcat-embed-core` to version 10.0.0-M7, 9.0.37, 8.5.57 or higher.\n## References\n- [Apache Security Advisory](https://lists.apache.org/thread.html/r61f411cf82488d6ec213063fc15feeeb88e31b0ca9c29652ee4f962e%40%3Cannounce.tomcat.apache.org%3E)\n- [GitHub Commit](https://github.com/apache/tomcat/commit/172977f04a5215128f1e278a688983dcd230f399)\n",
+      "disclosureTime": "2020-07-15T09:39:15Z",
+      "exploit": "Not Defined",
+      "functions": [
+        {
+          "functionId": {
+            "filePath": "org/apache/coyote/AbstractProtocol$ConnectionHandler.java",
+            "className": "AbstractProtocol$ConnectionHandler",
+            "functionName": "process"
+          },
+          "version": [
+            "[10.0.0-M1,10.0.0-M7)",
+            "[9.0.0.M5, 9.0.37)",
+            "[8.5.1,8.5.57)"
+          ]
+        }
+      ],
+      "fixedIn": [
+        "10.0.0-M7",
+        "9.0.37",
+        "8.5.57"
+      ],
+      "id": "SNYK-JAVA-ORGAPACHETOMCATEMBED-584427",
+      "identifiers": {
+        "CWE": [
+          "CWE-400"
+        ],
+        "CVE": [
+          "CVE-2020-13934"
+        ]
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2020-10-30T12:28:33.611192Z",
+      "moduleName": "org.apache.tomcat.embed:tomcat-embed-core",
+      "packageManager": "maven",
+      "packageName": "org.apache.tomcat.embed:tomcat-embed-core",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2020-07-15T16:40:14.601976Z",
+      "references": [
+        {
+          "title": "Apache Security Advisory",
+          "url": "https://lists.apache.org/thread.html/r61f411cf82488d6ec213063fc15feeeb88e31b0ca9c29652ee4f962e%40%3Cannounce.tomcat.apache.org%3E"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/apache/tomcat/commit/172977f04a5215128f1e278a688983dcd230f399"
+        }
+      ],
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "title": "Denial of Service (DoS)",
+      "insights": {
+        "triageAdvice": null
+      },
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 6.5,
+          "severity": "medium",
+          "modificationTime": "2022-05-03T23:12:20.849764Z"
+        },
+        {
+          "assigner": "NVD",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "severity": "high",
+          "modificationTime": "2022-03-02T04:10:18.695743Z"
+        },
+        {
+          "assigner": "RHEL",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "severity": "high",
+          "modificationTime": "2022-06-16T10:09:08.625314Z"
+        }
+      ],
+      "functions_new": [
+        {
+          "functionId": {
+            "className": "org.apache.coyote.AbstractProtocol$ConnectionHandler",
+            "functionName": "process"
+          },
+          "version": [
+            "[10.0.0-M1,10.0.0-M7)",
+            "[9.0.0.M5, 9.0.37)",
+            "[8.5.1,8.5.57)"
+          ]
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "[10.0.0-M1,10.0.0-M7)",
+          "[9.0.0.M5, 9.0.37)",
+          "[8.5.1,8.5.57)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "org.apache.tomcat.embed",
+        "artifactId": "tomcat-embed-core"
+      },
+      "severityWithCritical": "medium",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "org.springframework.boot:spring-boot-starter-web@2.3.0.M2",
+        "org.springframework.boot:spring-boot-starter-tomcat@2.3.0.M2",
+        "org.apache.tomcat.embed:tomcat-embed-core@9.0.31"
+      ],
+      "upgradePath": [
+        false,
+        "org.springframework.boot:spring-boot-starter-web@2.3.2.RELEASE",
+        "org.springframework.boot:spring-boot-starter-tomcat@2.3.2.RELEASE",
+        "org.apache.tomcat.embed:tomcat-embed-core@9.0.37"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.apache.tomcat.embed:tomcat-embed-core",
+      "version": "9.0.31"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "alternativeIds": [],
+      "creationTime": "2021-05-27T10:16:10.958113Z",
+      "credit": [
+        "@pwntester (Alvaro Muñoz)"
+      ],
+      "cvssScore": 7.3,
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Improper Input Validation. A bug in the `ELParserTokenManager` enables invalid EL expressions to be evaluated as if they were valid.\r\n\r\nThe bug seems to be in the parser’s grammar  - `$` or `#` followed by a character that is not `{`, `$` or `#` will be treated as a literal expression. The pertinent case is when the character following the `$` or `#` chars is a backslash. The parser will then consume the backslash as part of the literal expression and will leave the character that follows it unescaped.\r\n\r\n**Note:**\r\nUsers of `org.glassfish:javax.el` artifact should use `org.glassfish:jakarta.el` insead.\n## Remediation\nUpgrade `org.glassfish:jakarta.el` to version 3.0.4 or higher.\n## References\n- [GitHub Issue](https://github.com/eclipse-ee4j/el-ri/issues/155)\n- [GitHub PR](https://github.com/eclipse-ee4j/el-ri/pull/160)\n- [GitHub Security Lab](https://securitylab.github.com/advisories/GHSL-2020-021-jakarta-el/)\n- [Vulnerable Code](https://github.com/eclipse-ee4j/el-ri/blob/master/impl/src/main/java/com/sun/el/parser/ELParser.jjt#L451)\n",
+      "disclosureTime": "2021-05-27T10:04:06Z",
+      "exploit": "Not Defined",
+      "functions": [],
+      "fixedIn": [
+        "3.0.4"
+      ],
+      "id": "SNYK-JAVA-ORGGLASSFISH-1297098",
+      "identifiers": {
+        "CWE": [
+          "CWE-20"
+        ],
+        "CVE": [
+          "CVE-2021-28170"
+        ]
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2022-06-22T12:16:26.321127Z",
+      "moduleName": "org.glassfish:jakarta.el",
+      "packageManager": "maven",
+      "packageName": "org.glassfish:jakarta.el",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2021-05-27T15:34:19Z",
+      "references": [
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/eclipse-ee4j/el-ri/issues/155"
+        },
+        {
+          "title": "GitHub PR",
+          "url": "https://github.com/eclipse-ee4j/el-ri/pull/160"
+        },
+        {
+          "title": "GitHub Security Lab",
+          "url": "https://securitylab.github.com/advisories/GHSL-2020-021-jakarta-el/"
+        },
+        {
+          "title": "Vulnerable Code",
+          "url": "https://github.com/eclipse-ee4j/el-ri/blob/master/impl/src/main/java/com/sun/el/parser/ELParser.jjt%23L451"
+        }
+      ],
+      "severity": "high",
+      "socialTrendAlert": false,
+      "title": "Improper Input Validation",
+      "insights": {
+        "triageAdvice": null
+      },
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+          "cvssV3BaseScore": 5.3,
+          "severity": "medium",
+          "modificationTime": "2022-04-26T01:10:38.031029Z"
+        }
+      ],
+      "functions_new": [],
+      "semver": {
+        "vulnerable": [
+          "[0,3.0.4)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "org.glassfish",
+        "artifactId": "jakarta.el"
+      },
+      "severityWithCritical": "high",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "org.springframework.boot:spring-boot-starter-web@2.3.0.M2",
+        "org.springframework.boot:spring-boot-starter-tomcat@2.3.0.M2",
+        "org.glassfish:jakarta.el@3.0.3"
+      ],
+      "upgradePath": [
+        false,
+        "org.springframework.boot:spring-boot-starter-web@2.4.11",
+        "org.springframework.boot:spring-boot-starter-tomcat@2.4.11",
+        "org.glassfish:jakarta.el@3.0.4"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.glassfish:jakarta.el",
+      "version": "3.0.3"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "alternativeIds": [],
+      "creationTime": "2020-09-18T14:36:44.859594Z",
+      "credit": [
+        "Unknown"
+      ],
+      "cvssScore": 8.6,
+      "description": "## Overview\n[org.springframework:spring-web](https://github.com/spring-projects/spring-framework) is a package that provides a comprehensive programming and configuration model for modern Java-based enterprise applications - on any kind of deployment platform.\n\nAffected versions of this package are vulnerable to Improper Input Validation. The protections against Reflected File Download attacks from CVE-2015-5211 may be bypassed depending on the browser used through the use of a `jsessionid` path parameter.\n## Remediation\nUpgrade `org.springframework:spring-web` to version 4.3.29.RELEASE, 5.0.19.RELEASE, 5.1.18.RELEASE, 5.2.9.RELEASE or higher.\n## References\n- [CVE-2015-5211](https://tanzu.vmware.com/security/cve-2015-5211)\n- [Pivotal Security Advisory](https://pivotal.io/security/cve-2020-5421)\n",
+      "disclosureTime": "2020-09-18T14:23:55Z",
+      "exploit": "Not Defined",
+      "functions": [
+        {
+          "functionId": {
+            "filePath": "org/springframework/web/util/WebUtils.java",
+            "className": "WebUtils",
+            "functionName": "parseMatrixVariables"
+          },
+          "version": [
+            "[3.2.0.RELEASE,4.3.29.RELEASE)",
+            "[5.0.0.RELEASE, 5.0.19.RELEASE)",
+            "[5.1.0.RELEASE, 5.1.18.RELEASE)",
+            "[5.2.0.RELEASE, 5.2.9.RELEASE)"
+          ]
+        }
+      ],
+      "fixedIn": [
+        "4.3.29.RELEASE",
+        "5.0.19.RELEASE",
+        "5.1.18.RELEASE",
+        "5.2.9.RELEASE"
+      ],
+      "id": "SNYK-JAVA-ORGSPRINGFRAMEWORK-1009832",
+      "identifiers": {
+        "CWE": [
+          "CWE-20"
+        ],
+        "CVE": [
+          "CVE-2020-5421"
+        ]
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2020-11-01T15:06:12.285684Z",
+      "moduleName": "org.springframework:spring-web",
+      "packageManager": "maven",
+      "packageName": "org.springframework:spring-web",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2020-09-18T16:17:53Z",
+      "references": [
+        {
+          "title": "CVE-2015-5211",
+          "url": "https://tanzu.vmware.com/security/cve-2015-5211"
+        },
+        {
+          "title": "Pivotal Security Advisory",
+          "url": "https://pivotal.io/security/cve-2020-5421"
+        }
+      ],
+      "severity": "high",
+      "socialTrendAlert": false,
+      "title": "Improper Input Validation",
+      "insights": {
+        "triageAdvice": null
+      },
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:L/I:H/A:N",
+          "cvssV3BaseScore": 6.5,
+          "severity": "medium",
+          "modificationTime": "2022-06-24T01:10:58.163847Z"
+        }
+      ],
+      "functions_new": [
+        {
+          "functionId": {
+            "className": "org.springframework.web.util.WebUtils",
+            "functionName": "parseMatrixVariables"
+          },
+          "version": [
+            "[3.2.0.RELEASE,4.3.29.RELEASE)",
+            "[5.0.0.RELEASE, 5.0.19.RELEASE)",
+            "[5.1.0.RELEASE, 5.1.18.RELEASE)",
+            "[5.2.0.RELEASE, 5.2.9.RELEASE)"
+          ]
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "[3.2.0.RELEASE,4.3.29.RELEASE)",
+          "[5.0.0.RELEASE, 5.0.19.RELEASE)",
+          "[5.1.0.RELEASE, 5.1.18.RELEASE)",
+          "[5.2.0.RELEASE, 5.2.9.RELEASE)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "org.springframework",
+        "artifactId": "spring-web"
+      },
+      "severityWithCritical": "high",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "org.springframework.boot:spring-boot-starter-web@2.3.0.M2",
+        "org.springframework:spring-web@5.2.3.RELEASE"
+      ],
+      "upgradePath": [
+        false,
+        "org.springframework.boot:spring-boot-starter-web@2.3.4.RELEASE",
+        "org.springframework:spring-web@5.2.9.RELEASE"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.springframework:spring-web",
+      "version": "5.2.3.RELEASE"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+      "alternativeIds": [],
+      "creationTime": "2021-05-26T07:50:29.017223Z",
+      "credit": [
+        "Trung Pham of Viettel Cyber Security"
+      ],
+      "cvssScore": 4.4,
+      "description": "## Overview\n[org.springframework:spring-web](https://github.com/spring-projects/spring-framework) is a package that provides a comprehensive programming and configuration model for modern Java-based enterprise applications - on any kind of deployment platform.\n\nAffected versions of this package are vulnerable to Privilege Escalation. By recreating the temporary storage directory, a locally authenticated malicious user can read or modify files that have been uploaded to the WebFlux application, or overwrite arbitrary files with multipart request data.\n## Remediation\nUpgrade `org.springframework:spring-web` to version 5.3.7, 5.2.15.RELEASE or higher.\n## References\n- [GitHub Commit](https://github.com/spring-projects/spring-framework/commit/cce60c479c22101f24b2b4abebb6d79440b120d1)\n- [GitHub Issue](https://github.com/spring-projects/spring-framework/issues/26931)\n- [Pivotal Security Advisory](https://pivotal.io/security/cve-2021-22118)\n",
+      "disclosureTime": "2021-05-26T07:43:20Z",
+      "exploit": "Not Defined",
+      "functions": [],
+      "fixedIn": [
+        "5.3.7",
+        "5.2.15.RELEASE"
+      ],
+      "id": "SNYK-JAVA-ORGSPRINGFRAMEWORK-1296829",
+      "identifiers": {
+        "CWE": [
+          "CWE-264"
+        ],
+        "CVE": [
+          "CVE-2021-22118"
+        ]
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2022-05-14T15:25:37.113623Z",
+      "moduleName": "org.springframework:spring-web",
+      "packageManager": "maven",
+      "packageName": "org.springframework:spring-web",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2021-05-26T11:57:45Z",
+      "references": [
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/spring-projects/spring-framework/commit/cce60c479c22101f24b2b4abebb6d79440b120d1"
+        },
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/spring-projects/spring-framework/issues/26931"
+        },
+        {
+          "title": "Pivotal Security Advisory",
+          "url": "https://pivotal.io/security/cve-2021-22118"
+        }
+      ],
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "title": "Privilege Escalation",
+      "insights": {
+        "triageAdvice": null
+      },
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 7.8,
+          "severity": "high",
+          "modificationTime": "2022-07-26T01:11:31.378822Z"
+        }
+      ],
+      "functions_new": [],
+      "semver": {
+        "vulnerable": [
+          "[5.3.0,5.3.7)",
+          "[5.0.0.RELEASE,5.2.15.RELEASE)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "org.springframework",
+        "artifactId": "spring-web"
+      },
+      "severityWithCritical": "medium",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "org.springframework.boot:spring-boot-starter-web@2.3.0.M2",
+        "org.springframework:spring-web@5.2.3.RELEASE"
+      ],
+      "upgradePath": [
+        false,
+        "org.springframework.boot:spring-boot-starter-web@2.3.11.RELEASE",
+        "org.springframework:spring-web@5.2.15.RELEASE"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.springframework:spring-web",
+      "version": "5.2.3.RELEASE"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "alternativeIds": [],
+      "creationTime": "2022-03-29T10:05:31.971026Z",
+      "credit": [
+        "4ra1n"
+      ],
+      "cvssScore": 5.3,
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Denial of Service (DoS) by providing a specially crafted SpEL expression, that might result in an `OutOfMemoryError`.\n\n## Details\n\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its intended and legitimate users.\n\nUnlike other vulnerabilities, DoS attacks usually do not aim at breaching security. Rather, they are focused on making websites and services unavailable to genuine users resulting in downtime.\n\nOne popular Denial of Service vulnerability is DDoS (a Distributed Denial of Service), an attack that attempts to clog network pipes to the system by generating a large volume of traffic from many machines.\n\nWhen it comes to open source libraries, DoS vulnerabilities allow attackers to trigger such a crash or crippling of the service by using a flaw either in the application code or from the use of open source libraries.\n\nTwo common types of DoS vulnerabilities:\n\n* High CPU/Memory Consumption- An attacker sending crafted requests that could cause the system to take a disproportionate amount of time to process. For example, [commons-fileupload:commons-fileupload](SNYK-JAVA-COMMONSFILEUPLOAD-30082).\n\n* Crash - An attacker sending crafted requests that could cause the system to crash. For Example,  [npm `ws` package](https://snyk.io/vuln/npm:ws:20171108)\n\n## Remediation\nUpgrade `org.springframework:spring-expression` to version 5.3.17, 5.2.20.RELEASE or higher.\n## References\n- [GitHub Commit](https://github.com/spring-projects/spring-framework/commit/83ac65915871067c39a4fb255e0d484c785c0c11)\n- [GitHub Issue](https://github.com/spring-projects/spring-framework/issues/28145)\n- [Pivotal Security Advisory](https://pivotal.io/security/cve-2022-22950)\n",
+      "disclosureTime": "2022-03-29T09:51:43Z",
+      "exploit": "Not Defined",
+      "functions": [],
+      "fixedIn": [
+        "5.3.17",
+        "5.2.20.RELEASE"
+      ],
+      "id": "SNYK-JAVA-ORGSPRINGFRAMEWORK-2434828",
+      "identifiers": {
+        "CWE": [
+          "CWE-400"
+        ],
+        "CVE": [
+          "CVE-2022-22950"
+        ]
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2022-07-17T12:57:31.345773Z",
+      "moduleName": "org.springframework:spring-expression",
+      "packageManager": "maven",
+      "packageName": "org.springframework:spring-expression",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2022-03-29T14:24:08Z",
+      "references": [
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/spring-projects/spring-framework/commit/83ac65915871067c39a4fb255e0d484c785c0c11"
+        },
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/spring-projects/spring-framework/issues/28145"
+        },
+        {
+          "title": "Pivotal Security Advisory",
+          "url": "https://pivotal.io/security/cve-2022-22950"
+        }
+      ],
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "title": "Denial of Service (DoS)",
+      "insights": {
+        "triageAdvice": "This vulnerability is only applicable on systems using SpEL"
+      },
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 6.5,
+          "severity": "medium",
+          "modificationTime": "2022-06-23T01:11:13.680071Z"
+        }
+      ],
+      "functions_new": [],
+      "semver": {
+        "vulnerable": [
+          "[5.3.0,5.3.17)",
+          "[,5.2.20.RELEASE)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "org.springframework",
+        "artifactId": "spring-expression"
+      },
+      "severityWithCritical": "medium",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "org.springframework.boot:spring-boot-starter-web@2.3.0.M2",
+        "org.springframework:spring-webmvc@5.2.3.RELEASE",
+        "org.springframework:spring-expression@5.2.3.RELEASE"
+      ],
+      "upgradePath": [
+        false,
+        "org.springframework.boot:spring-boot-starter-web@2.5.11",
+        "org.springframework:spring-webmvc@5.3.17",
+        "org.springframework:spring-expression@5.3.17"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.springframework:spring-expression",
+      "version": "5.2.3.RELEASE"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:H",
+      "alternativeIds": [],
+      "creationTime": "2022-03-30T21:42:31.436000Z",
+      "credit": [
+        "Unknown"
+      ],
+      "cvssScore": 9.8,
+      "description": "## Overview\n[org.springframework:spring-beans](https://www.baeldung.com/spring-bean) is a package that is the basis for Spring Framework's IoC container. The BeanFactory interface provides an advanced configuration mechanism capable of managing any type of object.\n\nAffected versions of this package are vulnerable to Remote Code Execution via manipulation of `ClassLoader` that is achievable with a POST HTTP request. This could allow an attacker to execute a webshell on a victim's application (TomCat), or download arbitrary files from the server (Payara/Glassfish).\r\n\r\n**Note:** \r\n* Current public exploits require victim applications to be built with JRE version 9 (or above) and to be deployed on either Tomcat, Payara or Glassfish. \r\n* However, we have confirmed that it is technically possible for additional exploits to work under additional application configurations as well. \r\n* As such while we recommend users prioritise first remediating against the configuration described above, for full protection we also recommend upgrading all vulnerable versions to the fixed `spring-beans` version regardless of the application configuration.\r\n\r\n### Update Log \r\n* **31/03/2022 -** Severity was raised from 8.1 to 9.8\r\n* **08/04/2022 -** Advisory was updated to reflect that Snyk's security research team was able to author a working PoC of this vulnerability against applications that are deployed on Payara (which is based on Glassfish). \r\n\r\n\r\n## PoC\r\n```java\r\n1/ docker run -p 8888:8080 --rm --interactive --tty --name vm1 tomcat:9.0\r\n2/ ./mvnw install\r\n3/ docker cp target/handling-form-submission-complete.war vm1:/usr/local/tomcat/webapps\r\n4/ curl -X POST \\\r\n  -H \"pre:<%\" \\\r\n  -H \"post:;%>\" \\\r\n  -F 'class.module.classLoader.resources.context.parent.pipeline.first.pattern=%{pre}iSystem.out.println(123)%{post}i' \\\r\n  -F 'class.module.classLoader.resources.context.parent.pipeline.first.suffix=.jsp' \\\r\n  -F 'class.module.classLoader.resources.context.parent.pipeline.first.directory=webapps/handling-form-submission-complete' \\\r\n  -F 'class.module.classLoader.resources.context.parent.pipeline.first.prefix=rce' \\\r\n  -F 'class.module.classLoader.resources.context.parent.pipeline.first.fileDateFormat=' \\\r\n  http://localhost:8888/handling-form-submission-complete/greeting\r\n5/ curl http://localhost:8888/handling-form-submission-complete/rce.jsp\r\n```\n## Remediation\nUpgrade `org.springframework:spring-beans` to version 5.2.20, 5.3.18 or higher.\n## References\n- [CyberKendra Post](https://www.cyberkendra.com/2022/03/springshell-rce-0-day-vulnerability.html)\n- [GitHub Commit](https://github.com/spring-projects/spring-framework/commit/002546b3e4b8d791ea6acccb81eb3168f51abb15)\n- [LunaSec Blog](https://www.lunasec.io/docs/blog/spring-rce-vulnerabilities/)\n- [Payara Blogpost](https://blog.payara.fish/payara-and-spring4shell)\n- [Payara PoC](https://github.com/CalumHutton/CVE-2022-22965-PoC_Payara)\n- [Snyk Blog - Technical Breakdown](https://snyk.io/blog/spring4shell-zero-day-rce-spring-framework-explained/)\n- [Snyk PoC](https://github.com/Kirill89/CVE-2022-22965-PoC)\n- [Spring Security Announcement](https://spring.io/blog/2022/03/31/spring-framework-rce-early-announcement)\n- [Spring Tomcat Mitigation Advice](https://spring.io/blog/2022/04/01/spring-framework-rce-mitigation-alternative)\n- [CISA - Known Exploited Vulnerabilities](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)\n",
+      "disclosureTime": "2022-03-30T21:42:24Z",
+      "exploit": "High",
+      "functions": [
+        {
+          "functionId": {
+            "filePath": "org/springframework/beans/CachedIntrospectionResults.java",
+            "className": "CachedIntrospectionResults",
+            "functionName": "<init>"
+          },
+          "version": [
+            "[ ,5.2.20)",
+            "[5.3.0, 5.3.18)"
+          ]
+        }
+      ],
+      "fixedIn": [
+        "5.2.20",
+        "5.3.18"
+      ],
+      "id": "SNYK-JAVA-ORGSPRINGFRAMEWORK-2436751",
+      "identifiers": {
+        "CWE": [
+          "CWE-94"
+        ],
+        "CVE": [
+          "CVE-2022-22965"
+        ]
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2022-08-02T15:25:00.796989Z",
+      "moduleName": "org.springframework:spring-beans",
+      "packageManager": "maven",
+      "packageName": "org.springframework:spring-beans",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2022-03-30T22:32:44Z",
+      "references": [
+        {
+          "title": "CyberKendra Post",
+          "url": "https://www.cyberkendra.com/2022/03/springshell-rce-0-day-vulnerability.html"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/spring-projects/spring-framework/commit/002546b3e4b8d791ea6acccb81eb3168f51abb15"
+        },
+        {
+          "title": "LunaSec Blog",
+          "url": "https://www.lunasec.io/docs/blog/spring-rce-vulnerabilities/"
+        },
+        {
+          "title": "Payara Blogpost",
+          "url": "https://blog.payara.fish/payara-and-spring4shell"
+        },
+        {
+          "title": "Payara PoC",
+          "url": "https://github.com/CalumHutton/CVE-2022-22965-PoC_Payara"
+        },
+        {
+          "title": "Snyk Blog - Technical Breakdown",
+          "url": "https://snyk.io/blog/spring4shell-zero-day-rce-spring-framework-explained/"
+        },
+        {
+          "title": "Snyk PoC",
+          "url": "https://github.com/Kirill89/CVE-2022-22965-PoC"
+        },
+        {
+          "title": "Spring Security Announcement",
+          "url": "https://spring.io/blog/2022/03/31/spring-framework-rce-early-announcement"
+        },
+        {
+          "title": "Spring Tomcat Mitigation Advice",
+          "url": "https://spring.io/blog/2022/04/01/spring-framework-rce-mitigation-alternative"
+        },
+        {
+          "title": "CISA - Known Exploited Vulnerabilities",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "severity": "critical",
+      "socialTrendAlert": true,
+      "title": "Remote Code Execution",
+      "insights": {
+        "triageAdvice": null
+      },
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 9.8,
+          "severity": "critical",
+          "modificationTime": "2022-07-26T01:11:22.743934Z"
+        }
+      ],
+      "functions_new": [
+        {
+          "functionId": {
+            "className": "org.springframework.beans.CachedIntrospectionResults",
+            "functionName": "<init>"
+          },
+          "version": [
+            "[ ,5.2.20)",
+            "[5.3.0, 5.3.18)"
+          ]
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "[ ,5.2.20)",
+          "[5.3.0, 5.3.18)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "org.springframework",
+        "artifactId": "spring-beans"
+      },
+      "severityWithCritical": "critical",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "org.springframework.boot:spring-boot-starter-web@2.3.0.M2",
+        "org.springframework:spring-web@5.2.3.RELEASE",
+        "org.springframework:spring-beans@5.2.3.RELEASE"
+      ],
+      "upgradePath": [
+        false,
+        "org.springframework.boot:spring-boot-starter-web@2.5.12",
+        "org.springframework:spring-web@5.3.18",
+        "org.springframework:spring-beans@5.3.18"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.springframework:spring-beans",
+      "version": "5.2.3.RELEASE"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "alternativeIds": [],
+      "creationTime": "2022-05-12T08:45:35.744127Z",
+      "credit": [
+        "Rob Ryan"
+      ],
+      "cvssScore": 5.3,
+      "description": "## Overview\n[org.springframework:spring-beans](https://www.baeldung.com/spring-bean) is a package that is the basis for Spring Framework's IoC container. The BeanFactory interface provides an advanced configuration mechanism capable of managing any type of object.\n\nAffected versions of this package are vulnerable to Denial of Service (DoS) if it relies on data binding to set a `MultipartFile` or `javax.servlet.Part` to a field in a model object.\n\n## Details\n\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its intended and legitimate users.\n\nUnlike other vulnerabilities, DoS attacks usually do not aim at breaching security. Rather, they are focused on making websites and services unavailable to genuine users resulting in downtime.\n\nOne popular Denial of Service vulnerability is DDoS (a Distributed Denial of Service), an attack that attempts to clog network pipes to the system by generating a large volume of traffic from many machines.\n\nWhen it comes to open source libraries, DoS vulnerabilities allow attackers to trigger such a crash or crippling of the service by using a flaw either in the application code or from the use of open source libraries.\n\nTwo common types of DoS vulnerabilities:\n\n* High CPU/Memory Consumption- An attacker sending crafted requests that could cause the system to take a disproportionate amount of time to process. For example, [commons-fileupload:commons-fileupload](SNYK-JAVA-COMMONSFILEUPLOAD-30082).\n\n* Crash - An attacker sending crafted requests that could cause the system to crash. For Example,  [npm `ws` package](https://snyk.io/vuln/npm:ws:20171108)\n\n## Remediation\nUpgrade `org.springframework:spring-beans` to version 5.2.22.RELEASE, 5.3.20 or higher.\n## References\n- [GitHub Commit](https://github.com/spring-projects/spring-framework/commit/50177b1ad3485bd44239b1756f6c14607476fcf2)\n- [GitHub Commit](https://github.com/spring-projects/spring-framework/commit/83186b689f11f5e6efe7ccc08fdeb92f66fcd583)\n- [Tanzu vmware](https://tanzu.vmware.com/security/cve-2022-22970)\n",
+      "disclosureTime": "2022-05-12T08:17:10Z",
+      "exploit": "Not Defined",
+      "functions": [],
+      "fixedIn": [
+        "5.2.22.RELEASE",
+        "5.3.20"
+      ],
+      "id": "SNYK-JAVA-ORGSPRINGFRAMEWORK-2823313",
+      "identifiers": {
+        "CWE": [
+          "CWE-400"
+        ],
+        "CVE": [
+          "CVE-2022-22970"
+        ]
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2022-05-12T09:49:10.835416Z",
+      "moduleName": "org.springframework:spring-beans",
+      "packageManager": "maven",
+      "packageName": "org.springframework:spring-beans",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2022-05-12T09:49:10.833602Z",
+      "references": [
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/spring-projects/spring-framework/commit/50177b1ad3485bd44239b1756f6c14607476fcf2"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/spring-projects/spring-framework/commit/83186b689f11f5e6efe7ccc08fdeb92f66fcd583"
+        },
+        {
+          "title": "Tanzu vmware",
+          "url": "https://tanzu.vmware.com/security/cve-2022-22970"
+        }
+      ],
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "title": "Denial of Service (DoS)",
+      "insights": {
+        "triageAdvice": null
+      },
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.3,
+          "severity": "medium",
+          "modificationTime": "2022-07-26T01:11:19.570522Z"
+        }
+      ],
+      "functions_new": [],
+      "semver": {
+        "vulnerable": [
+          "[,5.2.22.RELEASE)",
+          "[5.3.0,5.3.20)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "org.springframework",
+        "artifactId": "spring-beans"
+      },
+      "severityWithCritical": "medium",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "org.springframework.boot:spring-boot-starter-web@2.3.0.M2",
+        "org.springframework:spring-web@5.2.3.RELEASE",
+        "org.springframework:spring-beans@5.2.3.RELEASE"
+      ],
+      "upgradePath": [
+        false,
+        "org.springframework.boot:spring-boot-starter-web@2.5.14",
+        "org.springframework:spring-web@5.3.20",
+        "org.springframework:spring-beans@5.3.20"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.springframework:spring-beans",
+      "version": "5.2.3.RELEASE"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N/E:P",
+      "alternativeIds": [],
+      "creationTime": "2022-04-14T11:54:10.207823Z",
+      "credit": [
+        "Unknown"
+      ],
+      "cvssScore": 3.7,
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Improper Handling of Case Sensitivity via the patterns for `disallowedFields` on a `DataBinder`. As a result, a field is not effectively protected unless it is listed with both upper and lower case for the first character of the field, including nested fields within the property path.\n## Remediation\nUpgrade `org.springframework:spring-context` to version 5.2.21, 5.3.19 or higher.\n## References\n- [GitHub Commit](https://github.com/spring-projects/spring-framework/commit/833e750175349ab4fd502109a8b41af77e25cdea)\n- [GitHub Issue](https://github.com/spring-projects/spring-framework/issues/28333)\n- [PoC](https://github.com/MarcinGadz/spring-rce-poc)\n- [Spring Blog Post](https://spring.io/blog/2022/04/13/spring-framework-data-binding-rules-vulnerability-cve-2022-22968)\n- [Tanzu Advisory](https://tanzu.vmware.com/security/cve-2022-22968)\n",
+      "disclosureTime": "2022-04-14T11:43:54Z",
+      "exploit": "Proof of Concept",
+      "functions": [],
+      "fixedIn": [
+        "5.2.21",
+        "5.3.19"
+      ],
+      "id": "SNYK-JAVA-ORGSPRINGFRAMEWORK-2689634",
+      "identifiers": {
+        "CWE": [
+          "CWE-178"
+        ],
+        "CVE": [
+          "CVE-2022-22968"
+        ]
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2022-05-15T07:59:33.898723Z",
+      "moduleName": "org.springframework:spring-context",
+      "packageManager": "maven",
+      "packageName": "org.springframework:spring-context",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2022-04-14T12:09:40Z",
+      "references": [
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/spring-projects/spring-framework/commit/833e750175349ab4fd502109a8b41af77e25cdea"
+        },
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/spring-projects/spring-framework/issues/28333"
+        },
+        {
+          "title": "PoC",
+          "url": "https://github.com/MarcinGadz/spring-rce-poc"
+        },
+        {
+          "title": "Spring Blog Post",
+          "url": "https://spring.io/blog/2022/04/13/spring-framework-data-binding-rules-vulnerability-cve-2022-22968"
+        },
+        {
+          "title": "Tanzu Advisory",
+          "url": "https://tanzu.vmware.com/security/cve-2022-22968"
+        }
+      ],
+      "severity": "low",
+      "socialTrendAlert": false,
+      "title": "Improper Handling of Case Sensitivity",
+      "insights": {
+        "triageAdvice": null
+      },
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+          "cvssV3BaseScore": 5.3,
+          "severity": "medium",
+          "modificationTime": "2022-07-26T01:11:20.613128Z"
+        }
+      ],
+      "functions_new": [],
+      "semver": {
+        "vulnerable": [
+          "[,5.2.21)",
+          "[5.3.0, 5.3.19)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "org.springframework",
+        "artifactId": "spring-context"
+      },
+      "severityWithCritical": "low",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "org.springframework.boot:spring-boot-starter-actuator@2.3.0.M2",
+        "org.springframework.boot:spring-boot-actuator-autoconfigure@2.3.0.M2",
+        "org.springframework:spring-context@5.2.3.RELEASE"
+      ],
+      "upgradePath": [
+        false,
+        "org.springframework.boot:spring-boot-starter-actuator@2.3.1.RELEASE",
+        "org.springframework.boot:spring-boot-actuator-autoconfigure@2.3.1.RELEASE"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.springframework:spring-context",
+      "version": "5.2.3.RELEASE"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:L/E:P/RL:T/RC:U",
+      "alternativeIds": [],
+      "creationTime": "2019-12-12T13:08:53.753033Z",
+      "credit": [
+        "Unknown"
+      ],
+      "cvssScore": 5.4,
+      "description": "## Overview\n[org.yaml:snakeyaml](https://code.google.com/p/snakeyaml/source/browse/) is a YAML 1.1 parser and emitter for Java.\n\nAffected versions of this package are vulnerable to Denial of Service (DoS). The Alias feature in SnakeYAML 1.18 allows entity expansion during a load operation, a related issue to CVE-2003-1564.\r\n\r\n*Note* While the Maintainer acknowledges the existence of the issue, they believe it should be solved by sanitizing the `inputStream` to the parser\n\n## Details\n\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its intended and legitimate users.\n\nUnlike other vulnerabilities, DoS attacks usually do not aim at breaching security. Rather, they are focused on making websites and services unavailable to genuine users resulting in downtime.\n\nOne popular Denial of Service vulnerability is DDoS (a Distributed Denial of Service), an attack that attempts to clog network pipes to the system by generating a large volume of traffic from many machines.\n\nWhen it comes to open source libraries, DoS vulnerabilities allow attackers to trigger such a crash or crippling of the service by using a flaw either in the application code or from the use of open source libraries.\n\nTwo common types of DoS vulnerabilities:\n\n* High CPU/Memory Consumption- An attacker sending crafted requests that could cause the system to take a disproportionate amount of time to process. For example, [commons-fileupload:commons-fileupload](SNYK-JAVA-COMMONSFILEUPLOAD-30082).\n\n* Crash - An attacker sending crafted requests that could cause the system to crash. For Example,  [npm `ws` package](https://snyk.io/vuln/npm:ws:20171108)\n\n## Remediation\nUpgrade `org.yaml:snakeyaml` to version 1.26 or higher.\n## References\n- [Bitbucket Commit](https://bitbucket.org/asomov/snakeyaml/commits/da11ddbd91c1f8392ea932b37fa48110fa54ed8c)\n- [Maintainer Report](https://bitbucket.org/asomov/snakeyaml/wiki/Billion%20laughs%20attack)\n- [POC: Bitbucket Issue](https://bitbucket.org/asomov/snakeyaml/issues/377/allow-configuration-for-preventing-billion)\n- [Proof Of Concept](https://bitbucket.org/asomov/snakeyaml/commits/04378d05777d21d114a9cdc24976ad49c8919222)\n",
+      "disclosureTime": "2019-12-12T03:28:21Z",
+      "exploit": "Proof of Concept",
+      "functions": [
+        {
+          "functionId": {
+            "filePath": "org/yaml/snakeyaml/constructor/BaseConstructor.java",
+            "className": "BaseConstructor",
+            "functionName": "constructMapping2ndStep"
+          },
+          "version": [
+            "[,1.26)"
+          ]
+        },
+        {
+          "functionId": {
+            "filePath": "org/yaml/snakeyaml/composer/Composer.java",
+            "className": "Composer",
+            "functionName": "composeNode"
+          },
+          "version": [
+            "[,1.26)"
+          ]
+        }
+      ],
+      "fixedIn": [
+        "1.26"
+      ],
+      "id": "SNYK-JAVA-ORGYAML-537645",
+      "identifiers": {
+        "CWE": [
+          "CWE-189"
+        ],
+        "GHSA": [
+          "GHSA-rvwf-54qp-4r6v"
+        ],
+        "CVE": [
+          "CVE-2017-18640"
+        ]
+      },
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2021-09-24T13:25:49.022190Z",
+      "moduleName": "org.yaml:snakeyaml",
+      "packageManager": "maven",
+      "packageName": "org.yaml:snakeyaml",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2019-12-19T03:28:21Z",
+      "references": [
+        {
+          "title": "Bitbucket Commit",
+          "url": "https://bitbucket.org/asomov/snakeyaml/commits/da11ddbd91c1f8392ea932b37fa48110fa54ed8c"
+        },
+        {
+          "title": "Maintainer Report",
+          "url": "https://bitbucket.org/asomov/snakeyaml/wiki/Billion%20laughs%20attack"
+        },
+        {
+          "title": "POC: Bitbucket Issue",
+          "url": "https://bitbucket.org/asomov/snakeyaml/issues/377/allow-configuration-for-preventing-billion"
+        },
+        {
+          "title": "Proof Of Concept",
+          "url": "https://bitbucket.org/asomov/snakeyaml/commits/04378d05777d21d114a9cdc24976ad49c8919222"
+        }
+      ],
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "title": "Denial of Service (DoS)",
+      "insights": {
+        "triageAdvice": null
+      },
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "severity": "high",
+          "modificationTime": "2022-05-03T22:09:31.798756Z"
+        },
+        {
+          "assigner": "RHEL",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:H",
+          "cvssV3BaseScore": 7.6,
+          "severity": "high",
+          "modificationTime": "2022-05-31T16:13:44.591839Z"
+        },
+        {
+          "assigner": "NVD",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "severity": "high",
+          "modificationTime": "2022-07-27T01:11:18.698951Z"
+        }
+      ],
+      "functions_new": [
+        {
+          "functionId": {
+            "className": "org.yaml.snakeyaml.constructor.BaseConstructor",
+            "functionName": "constructMapping2ndStep"
+          },
+          "version": [
+            "[,1.26)"
+          ]
+        },
+        {
+          "functionId": {
+            "className": "org.yaml.snakeyaml.composer.Composer",
+            "functionName": "composeNode"
+          },
+          "version": [
+            "[,1.26)"
+          ]
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,1.26)"
+        ]
+      },
+      "mavenModuleName": {
+        "groupId": "org.yaml",
+        "artifactId": "snakeyaml"
+      },
+      "severityWithCritical": "medium",
+      "from": [
+        "io.snyk.examples:snykier@0.0.1-SNAPSHOT",
+        "org.springframework.boot:spring-boot-starter-actuator@2.3.0.M2",
+        "org.springframework.boot:spring-boot-starter@2.3.0.M2",
+        "org.yaml:snakeyaml@1.25"
+      ],
+      "upgradePath": [
+        false,
+        "org.springframework.boot:spring-boot-starter-actuator@2.3.0.RELEASE",
+        "org.springframework.boot:spring-boot-starter@2.3.0.RELEASE",
+        "org.yaml:snakeyaml@1.26"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.yaml:snakeyaml",
+      "version": "1.25"
+    }
+  ],
+  "ok": false,
+  "dependencyCount": 36,
+  "org": "todo-demo",
+  "policy": "# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.\nversion: v1.25.0\n# ignores vulnerabilities until expiry date; change duration by modifying expiry date\nignore:\n  'snyk:lic:maven:ch.qos.logback:logback-core:(EPL-1.0_OR_LGPL-2.0)':\n    - '*':\n        reason: Dual license is fine for this usage\n        source: cli\n  'snyk:lic:maven:ch.qos.logback:logback-classic:(EPL-1.0_OR_LGPL-2.0)':\n    - '*':\n        reason: Dual license is fine for this usage\n        source: cli\npatch: {}\n",
+  "isPrivate": true,
+  "licensesPolicy": {
+    "severities": {},
+    "orgLicenseRules": {
+      "Unlicense": {
+        "licenseType": "Unlicense",
+        "severity": "high",
+        "instructions": ""
+      },
+      "Unspecified-Commercial": {
+        "licenseType": "Unspecified-Commercial",
+        "severity": "high",
+        "instructions": ""
+      },
+      "Unknown": {
+        "licenseType": "Unknown",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "AG-Grid": {
+        "licenseType": "AG-Grid",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "Elastic-2.0": {
+        "licenseType": "Elastic-2.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "GPL-2.0-with-autoconf-exception": {
+        "licenseType": "GPL-2.0-with-autoconf-exception",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "GPL-2.0-with-bison-exception": {
+        "licenseType": "GPL-2.0-with-bison-exception",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "GPL-2.0-with-classpath-exception": {
+        "licenseType": "GPL-2.0-with-classpath-exception",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "GPL-2.0-with-font-exception": {
+        "licenseType": "GPL-2.0-with-font-exception",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "GPL-2.0-with-GCC-exception": {
+        "licenseType": "GPL-2.0-with-GCC-exception",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "GPL-3.0-with-autoconf-exception": {
+        "licenseType": "GPL-3.0-with-autoconf-exception",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "GPL-3.0-with-GCC-exception": {
+        "licenseType": "GPL-3.0-with-GCC-exception",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "EUPL-1.2": {
+        "licenseType": "EUPL-1.2",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "Parity-6.0.0": {
+        "licenseType": "Parity-6.0.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "ODC-By-1.0": {
+        "licenseType": "ODC-By-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "Go": {
+        "licenseType": "Go",
+        "severity": "medium",
+        "instructions": ""
+      }
+    }
+  },
+  "packageManager": "maven",
+  "projectId": "ccd83c73-7628-45d5-bb05-773ee0ab07ad",
+  "ignoreSettings": {
+    "adminOnly": false,
+    "reasonRequired": false,
+    "disregardFilesystemIgnores": false
+  },
+  "summary": "27 vulnerable dependency paths",
+  "remediation": {
+    "unresolved": [],
+    "upgrade": {
+      "net.lingala.zip4j:zip4j@1.3.1": {
+        "upgradeTo": "net.lingala.zip4j:zip4j@2.7.0",
+        "upgrades": [
+          "net.lingala.zip4j:zip4j@1.3.1",
+          "net.lingala.zip4j:zip4j@1.3.1",
+          "net.lingala.zip4j:zip4j@1.3.1"
+        ],
+        "vulns": [
+          "SNYK-JAVA-NETLINGALAZIP4J-1074967",
+          "SNYK-JAVA-NETLINGALAZIP4J-1011359",
+          "SNYK-JAVA-NETLINGALAZIP4J-31679"
+        ]
+      },
+      "org.springframework.boot:spring-boot-starter-actuator@2.3.0.M2": {
+        "upgradeTo": "org.springframework.boot:spring-boot-starter-actuator@2.5.12",
+        "upgrades": [
+          "com.fasterxml.jackson.core:jackson-databind@2.10.1",
+          "com.fasterxml.jackson.core:jackson-databind@2.10.1",
+          "ch.qos.logback:logback-core@1.2.3",
+          "org.springframework:spring-context@5.2.3.RELEASE",
+          "com.fasterxml.jackson.core:jackson-databind@2.10.1",
+          "org.yaml:snakeyaml@1.25"
+        ],
+        "vulns": [
+          "SNYK-JAVA-COMFASTERXMLJACKSONCORE-2421244",
+          "SNYK-JAVA-COMFASTERXMLJACKSONCORE-2326698",
+          "SNYK-JAVA-CHQOSLOGBACK-1726923",
+          "SNYK-JAVA-ORGSPRINGFRAMEWORK-2689634",
+          "SNYK-JAVA-COMFASTERXMLJACKSONCORE-1048302",
+          "SNYK-JAVA-ORGYAML-537645"
+        ]
+      },
+      "org.springframework.boot:spring-boot-starter-web@2.3.0.M2": {
+        "upgradeTo": "org.springframework.boot:spring-boot-starter-web@2.5.14",
+        "upgrades": [
+          "org.springframework:spring-beans@5.2.3.RELEASE",
+          "org.springframework:spring-beans@5.2.3.RELEASE",
+          "org.springframework:spring-expression@5.2.3.RELEASE",
+          "org.apache.tomcat.embed:tomcat-embed-core@9.0.31",
+          "org.glassfish:jakarta.el@3.0.3",
+          "org.apache.tomcat.embed:tomcat-embed-core@9.0.31",
+          "org.apache.tomcat.embed:tomcat-embed-core@9.0.31",
+          "org.springframework:spring-web@5.2.3.RELEASE",
+          "org.apache.tomcat.embed:tomcat-embed-core@9.0.31",
+          "org.apache.tomcat.embed:tomcat-embed-core@9.0.31",
+          "org.apache.tomcat.embed:tomcat-embed-core@9.0.31",
+          "org.apache.tomcat.embed:tomcat-embed-core@9.0.31",
+          "org.apache.tomcat.embed:tomcat-embed-core@9.0.31",
+          "org.apache.tomcat.embed:tomcat-embed-core@9.0.31",
+          "org.springframework:spring-web@5.2.3.RELEASE",
+          "org.apache.tomcat.embed:tomcat-embed-core@9.0.31",
+          "org.apache.tomcat.embed:tomcat-embed-core@9.0.31",
+          "org.apache.tomcat.embed:tomcat-embed-core@9.0.31"
+        ],
+        "vulns": [
+          "SNYK-JAVA-ORGSPRINGFRAMEWORK-2823313",
+          "SNYK-JAVA-ORGSPRINGFRAMEWORK-2436751",
+          "SNYK-JAVA-ORGSPRINGFRAMEWORK-2434828",
+          "SNYK-JAVA-ORGAPACHETOMCATEMBED-2414084",
+          "SNYK-JAVA-ORGGLASSFISH-1297098",
+          "SNYK-JAVA-ORGAPACHETOMCATEMBED-1728266",
+          "SNYK-JAVA-ORGAPACHETOMCATEMBED-1728265",
+          "SNYK-JAVA-ORGSPRINGFRAMEWORK-1296829",
+          "SNYK-JAVA-ORGAPACHETOMCATEMBED-1728264",
+          "SNYK-JAVA-ORGAPACHETOMCATEMBED-1080637",
+          "SNYK-JAVA-ORGAPACHETOMCATEMBED-1080638",
+          "SNYK-JAVA-ORGAPACHETOMCATEMBED-1048292",
+          "SNYK-JAVA-ORGAPACHETOMCATEMBED-1061939",
+          "SNYK-JAVA-ORGAPACHETOMCATEMBED-1017119",
+          "SNYK-JAVA-ORGSPRINGFRAMEWORK-1009832",
+          "SNYK-JAVA-ORGAPACHETOMCATEMBED-584427",
+          "SNYK-JAVA-ORGAPACHETOMCATEMBED-1728268",
+          "SNYK-JAVA-ORGAPACHETOMCATEMBED-570072"
+        ]
+      }
+    },
+    "patch": {},
+    "ignore": {},
+    "pin": {}
+  },
+  "filesystemPolicy": true,
+  "filtered": {
+    "ignore": [],
+    "patch": []
+  },
+  "uniqueCount": 27,
+  "projectName": "io.snyk.examples:snykier",
+  "displayTargetFile": "pom.xml",
+  "path": "/Users/garethr/Documents/snykier"
+}
