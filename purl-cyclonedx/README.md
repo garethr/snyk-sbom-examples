@@ -14,7 +14,7 @@ We'll also use [syft](https://github.com/anchore/syft) to generate the SBOM, alt
 The example script is written in python, and uses two extra dependencies.
 
 ```
-pip install pysnyk packageurl-url
+pip install pysnyk packageurl-python
 ```
 
 You don't need to use Python to use the API, but the [cyclone-to-vuln.py](cyclone-to-vuln.py) script provides a very basic implementation you could use as the basis for something more useful.
