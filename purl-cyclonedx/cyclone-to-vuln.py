@@ -12,7 +12,13 @@ try:
     token = os.environ["SNYK_TOKEN"]
 except KeyError:
     sys.exit("You must provide a SNYK_TOKEN to run Snyk Shell")
-client = snyk.SnykClient(token, version="2022-04-04~experimental", url="https://api.snyk.io/rest")
+client = snyk.SnykClient(token, version="2022-09-15~experimental", url="https://api.snyk.io/rest")
+
+# We need an org id, but any org ID will do
+response = client.get("/orgs").json()
+org_id = response["data"][0]["id"]
+
+print(org_id)
 
 # Read the contents from stdin. This is a very simple implementation with a poor user experience
 # but is intended for demonstration purposes only
@@ -28,8 +34,8 @@ for purl in [component["purl"] for component in data["components"]]:
     if purl_o.to_dict()["version"]:
         try:
             print(purl)
-            response = client.get(f"/packages/{encoded_purl}/vulnerabilities").json()
-            for vuln in response["data"]["attributes"]["vulnerabilities"]:
+            response = client.get(f"/orgs/{org_id}/packages/{encoded_purl}/issues").json()
+            for vuln in response["data"]:
                 print(f"    {vuln['id']}")
         except:
             print(f"Error with {purl}")
